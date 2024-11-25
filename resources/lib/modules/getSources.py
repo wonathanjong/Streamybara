@@ -1171,7 +1171,6 @@ class TorrentCacheCheck:
             g.log_stacktrace()
 
     def _realdebrid_worker(self, torrent_list, info):
-
         try:
             for i in torrent_list:
                 with contextlib.suppress(KeyError):
