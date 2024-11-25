@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.seren" version="3.0.1" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="3.0.5" name="Seren" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.addon" version="17.9.910" />
         <import addon="xbmc.python" version="3.0.0" />
@@ -65,6 +65,15 @@
             <screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
         </assets>
         <news>
+            Changelog 3.0.5
+            [BUG] Fix RD playback
+            [BUG] Improved 3D Filtering
+            [FEATURE] Added option to filer results by internet speed
+            [FEATURE] Added 'Cancel' button to smartplay window
+            [FEATURE] Added 'Icon Only' scraper display style option
+            [FEATURE] Added option to hide resolver window when attempting to play
+            [FEATURE] Added 60 FPS filter
+
             Changelog 3.0.1
             [FEATURE] Handle Kodi database version for Omega 21
 
