@@ -1,3 +1,6 @@
+Changelog 3.0.61
+[BUG] Fix AD not deleting magnet if not cached
+
 Changelog 3.0.6
 [BUG] Fix AD Playback
 
