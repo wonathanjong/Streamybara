@@ -499,10 +499,7 @@ class _RealDebridDownloader(_DebridDownloadBase):
         self.available_files = []
 
     def _fetch_available_files(self):
-        availability = self.debrid_module.check_hash(self.source["hash"])
-        availability = [
-            i for i in availability[self.source["hash"]]["rd"] if self.debrid_module.is_streamable_storage_type(i)
-        ]
+        availability = self.debrid_module.check_hash(self.source["hash"])[self.source["hash"]]["rd"]
         try:
             availability = sorted(availability, key=lambda k: len(k.values()))[0]
         except IndexError as e:
