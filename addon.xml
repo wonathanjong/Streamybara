@@ -9,6 +9,7 @@
         <import addon="script.module.inputstreamhelper" version="0.5.10" optional="true"/>
         <import addon="script.module.unidecode" version="1.1.1"/>
         <import addon="script.module.myconnpy" version="8.0.18"/>
+        <import addon="script.module.web-pdb" version="1.5.6"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="seren.py">
         <provides>video</provides>
@@ -68,6 +69,8 @@
             Changelog 3.0.62
             [BUG] Optimised RD fix implementation
             [BUG] Improved RD season pack handling
+            [BUG] Improved RD download handling when uncached
+            [BUG] Improved RD file selection handling when uncached
 
             Changelog 3.0.61
             [BUG] Fix AD not deleting magnet if not cached

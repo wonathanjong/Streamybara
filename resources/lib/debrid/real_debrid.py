@@ -254,9 +254,12 @@ class RealDebrid:
         self.torrent_select_all(torrent_id)
         torrent_info = self.torrent_info(torrent_id)
 
+        if "files" in torrent_info:
+            torrent_info["files"] = [file for file in torrent_info["files"] if 'sample' not in file['path'].lower() and source_utils.is_file_ext_valid(file["path"])]
+
         if torrent_info.get('status') == 'downloaded':
             hash_dict = {
-                hash_value: {"torrent_id": torrent_id,'rd': [
+                hash_value: {"torrent_id": torrent_id, "torrent_info": torrent_info, 'rd': [
                     {str(file['id']): {'filename': file['path'], 'filesize': file['bytes']}}
                     for file in torrent_info.get('files', []) if file.get('selected') == 1
                 ]}
