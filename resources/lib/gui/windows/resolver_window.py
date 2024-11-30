@@ -47,7 +47,6 @@ class ResolverWindow(SingleItemWindow):
             except Exception:
                 g.log_stacktrace()
                 continue
-        # import web_pdb; web_pdb.set_trace()
         if stream_link is None:
             self.return_data = "none", "none"
         else:

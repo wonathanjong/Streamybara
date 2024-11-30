@@ -264,6 +264,9 @@ class RealDebrid:
                     for file in torrent_info.get('files', []) if file.get('selected') == 1
                 ]}
             }
+
+            if g.get_bool_setting("rd.autodelete"):
+                self.delete_torrent(torrent_id)
         else:
             self.delete_torrent(torrent_id)
             hash_dict = {}
