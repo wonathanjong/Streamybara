@@ -1,5 +1,6 @@
 import xbmc
 import xbmcgui
+from resources.lib.modules.navigation import push
 
 from resources.lib.modules.exceptions import NoPlayableSourcesException
 from resources.lib.modules.globals import g
@@ -17,6 +18,7 @@ def dispatch(params):
     source_select = params.get("source_select") == "true"
     overwrite_cache = params.get("seren_reload") == "true"
     resume = params.get("resume")
+    preferred_quality = params.get("preferred")
     force_resume_check = params.get("forceresumecheck") == "true"
     force_resume_off = params.get("forceresumeoff") == "true"
     force_resume_on = params.get("forceresumeon") == "true"
@@ -25,11 +27,15 @@ def dispatch(params):
     endpoint = params.get("endpoint")
 
     g.log(f"Seren, Running Path - {g.REQUEST_PARAMS}")
+    push(g.create_url(f"plugin://{g.ADDON_ID}", params))
 
     if action is None:
-        from resources.lib.gui import homeMenu
+        from resources.lib.gui.windows.home_window import HomeWindow
+        from resources.lib.database.skinManager import SkinManager
 
-        homeMenu.Menus().home()
+        window = HomeWindow(*SkinManager().confirm_skin_path("home.xml"))
+        window.doModal()
+        del window
 
     elif action == "genericEndpoint":
         if mediatype == "movies":
@@ -157,6 +163,18 @@ def dispatch(params):
             sources = sources_helper.sort_sources(ii, sources_list)
             if sources is None:
                 return
+
+            if preferred_quality is not None:
+                from resources.lib.modules import playback
+                try:
+                    pref_int = int(preferred_quality)
+                except (ValueError, TypeError):
+                    pref_int = None
+                chosen = playback.select_preferred_source(
+                    sources, g.get_int_setting("general.maxResolution", 0), pref_int
+                )
+                if chosen:
+                    sources = [chosen] + [s for s in sources if s is not chosen]
 
             # Select and resolve source
             if item_information['info']['mediatype'] == g.MEDIA_EPISODE:
@@ -325,6 +343,38 @@ def dispatch(params):
         from resources.lib.gui import tvshowMenus
 
         tvshowMenus.Menus().shows_years(action_args)
+
+    elif action == "openSearch":
+        from resources.lib.gui.windows.home_window import HomeWindow
+        from resources.lib.database.skinManager import SkinManager
+
+        HomeWindow(*SkinManager().confirm_skin_path("home.xml"))._open_search()
+
+    elif action == "movieDetails":
+        from resources.lib.gui.windows.movie_detail_window import MovieDetailWindow
+        from resources.lib.database.skinManager import SkinManager
+        from resources.lib.common import tools
+
+        item = tools.get_item_information(action_args)
+        window = MovieDetailWindow(
+            *SkinManager().confirm_skin_path("movie_detail.xml"),
+            item_information=item,
+        )
+        window.doModal()
+        del window
+
+    elif action == "showDetails":
+        from resources.lib.gui.windows.show_detail_window import ShowDetailWindow
+        from resources.lib.database.skinManager import SkinManager
+        from resources.lib.common import tools
+
+        item = tools.get_item_information(action_args)
+        window = ShowDetailWindow(
+            *SkinManager().confirm_skin_path("show_detail.xml"),
+            item_information=item,
+        )
+        window.doModal()
+        del window
 
     elif action == "searchMenu":
         from resources.lib.gui import homeMenu
@@ -786,6 +836,11 @@ def dispatch(params):
         from resources.lib.database import torrentCache
 
         torrentCache.TorrentCache().do_cleanup()
+
+    elif action == "runOnboarding":
+        from resources.lib.gui.onboarding import OnboardingWizard
+
+        OnboardingWizard().run()
 
     elif action == "chooseTimeZone":
         from resources.lib.modules.manual_timezone import choose_timezone

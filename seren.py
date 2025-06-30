@@ -2,6 +2,7 @@ import sys
 
 from resources.lib.modules import router
 from resources.lib.modules.globals import g
+from resources.lib.gui.onboarding import OnboardingWizard
 from resources.lib.modules.serenMonitor import ONWAKE_NETWORK_UP_DELAY
 from resources.lib.modules.timeLogger import TimeLogger
 
@@ -31,6 +32,9 @@ def seren_endpoint():
         g.init_globals(sys.argv)
 
         if _sleeping_retry_handler() and not g.abort_requested():
+            OnboardingWizard().run()
+            if not g.get_bool_setting("general.onboarding_complete"):
+                return
             with TimeLogger(f"{g.REQUEST_PARAMS.get('action', '')}"):
                 router.dispatch(g.REQUEST_PARAMS)
 

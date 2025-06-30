@@ -3,12 +3,25 @@
 	<section id="plugin.video.seren">
 		<category id="general" label="30084" help="">
 			<group id="1" label="30591">
-				<setting id="searchHistory" type="boolean" label="30161" help="">
-					<level>0</level>
-					<default>false</default>
-					<control type="toggle"/>
-				</setting>
-				<setting id="general.hideSpecials" type="boolean" label="30172" help="">
+                                <setting id="searchHistory" type="boolean" label="30161" help="">
+                                        <level>0</level>
+                                        <default>false</default>
+                                        <control type="toggle"/>
+                                </setting>
+                                <setting id="general.onboarding_complete" type="boolean" label="30705" help="">
+                                        <level>1</level>
+                                        <default>false</default>
+                                        <control type="toggle"/>
+                                </setting>
+                                <setting id="general.runOnboarding" type="action" label="30708" help="">
+                                        <level>1</level>
+                                        <data>RunPlugin(plugin://plugin.video.seren/?action=runOnboarding)</data>
+                                        <constraints>
+                                                <allowempty>true</allowempty>
+                                        </constraints>
+                                        <control type="button" format="action" />
+                                </setting>
+                                <setting id="general.hideSpecials" type="boolean" label="30172" help="">
 					<level>0</level>
 					<default>true</default>
 					<control type="toggle"/>
@@ -1243,18 +1256,23 @@
 					<default>true</default>
 					<control type="toggle"/>
 				</setting>
-				<setting id="general.timeout" type="integer" label="30112" help="">
-					<level>0</level>
-					<default>60</default>
-					<constraints>
-						<minimum>10</minimum>
-						<maximum>180</maximum>
-					</constraints>
-					<control type="slider" format="integer">
-						<popup>false</popup>
-					</control>
-				</setting>
-			</group>
+                                <setting id="general.timeout" type="integer" label="30112" help="">
+                                        <level>0</level>
+                                        <default>60</default>
+                                        <constraints>
+                                                <minimum>10</minimum>
+                                                <maximum>180</maximum>
+                                        </constraints>
+                                        <control type="slider" format="integer">
+                                                <popup>false</popup>
+                                        </control>
+                                </setting>
+                                <setting id="scraper.url" type="string" label="30706" help="">
+                                        <level>0</level>
+                                        <default></default>
+                                        <control type="edit" format="text" />
+                                </setting>
+                        </group>
 			<group id="2" label="30189">
 				<setting id="premiumize.cloudInspection" type="boolean" label="30635" help="">
 					<level>0</level>

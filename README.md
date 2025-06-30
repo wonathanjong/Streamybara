@@ -9,6 +9,34 @@
 
 Seren is a multi-source addon for Kodi with the added ability to install custom provider modules. Unlike other Kodi addons which are generally built for a single service use, Seren allows users to connect to multiple online/offline services at once for their viewing with a single click.
 
+The add-on now includes a first-run onboarding wizard guiding you through
+configuring debrid providers, connecting your Trakt account, adding a scraper
+source and choosing a preferred resolution profile. The wizard runs automatically the
+first time Seren launches and can later be accessed from the settings menu.
+Resolution profiles include **Highest**, **High**, **Medium**, and **Low** which
+select streams based on resolution and file size.
+
+A modern home screen provides a simple navigation bar with quick access to
+Home, TV, Movies, your Trakt lists, search and settings. Selecting **My Lists**
+opens a menu showing all of your saved Trakt lists. Content rows now include a
+"Continue Watching" carousel built from your Trakt bookmarks, a carousel for
+each of your personal Trakt lists and a row of recommended movies when you are
+signed into Trakt.
+
+Search is now accessible from the navigation bar and shows results in a
+dedicated list view with vertical scrolling.
+
+Trakt lists opened in this list view include a heart button in the header to
+add or remove the list from your liked lists.
+
+Selecting any title now opens a detail page with a play button,
+rich metadata and related recommendations. A new **Select Source** button lets
+you override the resolution chosen from your preference setting.
+Home carousels now feature a **More** button to view entire rows and a simple
+back stack remembers your previous screens. The onboarding wizard verifies the
+format of your provider token and Trakt API key so setup will not finish until
+valid details are entered.
+
 ## Contribution
 
 Install all dependencies in requirements.txt
@@ -21,6 +49,35 @@ Configure hooks for automated pre commit changes:
 pre-commit install
 ```
 Ensure that `git` is available in your PATH
+
+## Running Tests
+
+Execute the following to run lint checks and unit tests:
+
+```bash
+python -m py_compile seren.py resources/lib/gui/onboarding.py \
+    resources/lib/gui/windows/home_window.py \
+    resources/lib/gui/windows/list_window.py \
+    resources/lib/gui/windows/movie_detail_window.py \
+    resources/lib/gui/windows/show_detail_window.py \
+    resources/lib/modules/router.py resources/lib/modules/search.py \
+    resources/lib/modules/favorites.py
+pytest -q
+```
+
+## Packaging for Kodi
+
+To test the add-on on another device, create a zip archive of the plugin
+directory. Kodi can install zipped add-ons through the **Install from zip file**
+option in the Add-on Browser.
+
+```bash
+cd ..
+zip -r plugin.video.seren.zip plugin.video.seren -x '*.git*' 'tests/*'
+```
+
+Copy `plugin.video.seren.zip` to your Kodi system and install it via the Add-on
+Browser.
 
 ## FAQ
 
