@@ -3701,3 +3701,135 @@ msgstr "Minimum Percentage Left Before Showing Dialog"
 msgctxt "#30652"
 msgid "Icon Only"
 msgstr "Icon Only"
+
+#: onboarding wizard
+msgctxt "#30700"
+msgid "Welcome to Seren"
+msgstr "Welcome to Seren"
+
+msgctxt "#30701"
+msgid "Please complete the initial setup"
+msgstr "Please complete the initial setup"
+
+msgctxt "#30702"
+msgid "Choose your debrid provider"
+msgstr "Choose your debrid provider"
+
+msgctxt "#30703"
+msgid "Skip"
+msgstr "Skip"
+
+msgctxt "#30704"
+msgid "Setup complete!"
+msgstr "Setup complete!"
+
+msgctxt "#30705"
+msgid "Enter scraper source URL"
+msgstr "Enter scraper source URL"
+
+msgctxt "#30706"
+msgid "Select default resolution"
+msgstr "Select default resolution"
+
+msgctxt "#30707"
+msgid "Authorize Trakt account?"
+msgstr "Authorize Trakt account?"
+
+msgctxt "#30708"
+msgid "Run Setup Wizard"
+msgstr "Run Setup Wizard"
+
+#: home navigation
+msgctxt "#30709"
+msgid "Home"
+msgstr "Home"
+
+msgctxt "#30710"
+msgid "TV"
+msgstr "TV"
+
+msgctxt "#30711"
+msgid "Movies"
+msgstr "Movies"
+
+msgctxt "#30712"
+msgid "My Lists"
+msgstr "My Lists"
+
+msgctxt "#30713"
+msgid "Search"
+msgstr "Search"
+
+msgctxt "#30714"
+msgid "Settings"
+msgstr "Settings"
+
+#: home sections
+msgctxt "#30715"
+msgid "Continue Watching"
+msgstr "Continue Watching"
+
+
+msgctxt "#30717"
+msgid "Search: %s"
+msgstr "Search: %s"
+
+msgctxt "#30718"
+msgid "No results found"
+msgstr "No results found"
+
+msgctxt "#30719"
+msgid "Play"
+msgstr "Play"
+
+msgctxt "#30720"
+msgid "Seasons"
+msgstr "Seasons"
+
+msgctxt "#30721"
+msgid "Episodes"
+msgstr "Episodes"
+
+msgctxt "#30722"
+msgid "Related"
+msgstr "Related"
+
+msgctxt "#30716"
+msgid "Trakt Lists"
+msgstr "Trakt Lists"
+
+msgctxt "#30723"
+msgid "Recommendations"
+msgstr "Recommendations"
+
+msgctxt "#30724"
+msgid "Add to Favourites"
+msgstr "Add to Favourites"
+
+msgctxt "#30725"
+msgid "Remove from Favourites"
+msgstr "Remove from Favourites"
+
+msgctxt "#30726"
+msgid "Enter provider token"
+msgstr "Enter provider token"
+
+msgctxt "#30727"
+msgid "Invalid token, try again"
+msgstr "Invalid token, try again"
+
+msgctxt "#30728"
+msgid "Enter Trakt API key"
+msgstr "Enter Trakt API key"
+
+msgctxt "#30729"
+msgid "Invalid key, try again"
+msgstr "Invalid key, try again"
+
+msgctxt "#30730"
+msgid "More \u203a"
+msgstr "More \u203a"
+
+msgctxt "#30731"
+msgid "Select Source"
+msgstr "Select Source"

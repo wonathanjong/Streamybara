@@ -188,7 +188,12 @@ class BaseWindow(xbmcgui.WindowXMLDialog):
     def onAction(self, action):
         action_id = action.getId()
         if action_id in self.action_exitkeys_id:
+            from resources.lib.modules.navigation import pop
+
+            prev = pop()
             self.close()
+            if prev:
+                xbmc.executebuiltin(f'RunPlugin("{prev}")')
             return
         if action_id != 7:  # Enter(7) also fires an onClick event
             self.handle_action(action_id, self.getFocusId())

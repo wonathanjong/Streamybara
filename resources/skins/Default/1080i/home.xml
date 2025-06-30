@@ -1,0 +1,191 @@
+<window id="11000">
+    <coordinates>
+        <left>0</left>
+        <top>0</top>
+        <width>1920</width>
+        <height>1080</height>
+    </coordinates>
+    <controls>
+        <control type="group">
+            <left>0</left>
+            <top>0</top>
+            <width>1920</width>
+            <height>80</height>
+            <control type="image">
+                <texture>white.png</texture>
+                <colordiffuse>CC000000</colordiffuse>
+            </control>
+            <control type="list" id="1001">
+                <left>60</left>
+                <top>20</top>
+                <width>1800</width>
+                <height>40</height>
+                <orientation>horizontal</orientation>
+                <itemlayout width="200" height="40">
+                    <control type="label">
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>center</align>
+                        <textcolor>FFFFFFFF</textcolor>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="200" height="40">
+                    <control type="label">
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>center</align>
+                        <textcolor>FFFFAA00</textcolor>
+                    </control>
+                </focusedlayout>
+                <ondown>2001</ondown>
+            </control>
+        </control>
+
+        <control type="group">
+            <left>60</left>
+            <top>100</top>
+            <width>1800</width>
+            <height>360</height>
+            <control type="label">
+                <label>$ADDON[plugin.video.seren 30715]</label>
+            </control>
+            <control type="button" id="2002">
+                <left>1700</left>
+                <top>0</top>
+                <width>100</width>
+                <height>40</height>
+                <label>$ADDON[plugin.video.seren 30730]</label>
+            </control>
+            <control type="list" id="2001">
+                <top>40</top>
+                <width>1800</width>
+                <height>300</height>
+                <orientation>horizontal</orientation>
+                <itemlayout width="250" height="300">
+                    <control type="image">
+                        <width>250</width>
+                        <height>250</height>
+                        <texture>$INFO[ListItem.Art(poster)]</texture>
+                    </control>
+                    <control type="label">
+                        <top>255</top>
+                        <width>250</width>
+                        <height>40</height>
+                        <align>center</align>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="250" height="300">
+                    <control type="image">
+                        <width>250</width>
+                        <height>250</height>
+                        <texture>$INFO[ListItem.Art(poster)]</texture>
+                        <colordiffuse>FFFFAA00</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <top>255</top>
+                        <width>250</width>
+                        <height>40</height>
+                        <align>center</align>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>FFFFAA00</textcolor>
+                    </control>
+                </focusedlayout>
+                <onup>1001</onup>
+                <ondown>3001</ondown>
+            </control>
+        </control>
+
+        <control type="group">
+            <left>60</left>
+            <top>480</top>
+            <width>1800</width>
+            <height>360</height>
+            <control type="label">
+                <label>$ADDON[plugin.video.seren 30716]</label>
+            </control>
+            <control type="button" id="3002">
+                <left>1700</left>
+                <top>0</top>
+                <width>100</width>
+                <height>40</height>
+                <label>$ADDON[plugin.video.seren 30730]</label>
+            </control>
+            <control type="list" id="3001">
+                <top>40</top>
+                <width>1800</width>
+                <height>300</height>
+                <orientation>horizontal</orientation>
+                <itemlayout width="250" height="300">
+                    <control type="image">
+                        <width>250</width>
+                        <height>250</height>
+                        <texture>$INFO[ListItem.Art(poster)]</texture>
+                    </control>
+                    <control type="label">
+                        <top>255</top>
+                        <width>250</width>
+                        <height>40</height>
+                        <align>center</align>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="250" height="300">
+                    <control type="image">
+                        <width>250</width>
+                        <height>250</height>
+                        <texture>$INFO[ListItem.Art(poster)]</texture>
+                        <colordiffuse>FFFFAA00</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <top>255</top>
+                        <width>250</width>
+                        <height>40</height>
+                        <align>center</align>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>FFFFAA00</textcolor>
+                    </control>
+                </focusedlayout>
+                <onup>2001</onup>
+                <ondown>4001</ondown>
+            </control>
+        </control>
+
+        <control type="group">
+            <left>60</left>
+            <top>860</top>
+            <width>1800</width>
+            <height>200</height>
+            <control type="label">
+                <label>$ADDON[plugin.video.seren 30723]</label>
+            </control>
+            <control type="button" id="4002">
+                <left>1700</left>
+                <top>0</top>
+                <width>100</width>
+                <height>40</height>
+                <label>$ADDON[plugin.video.seren 30730]</label>
+            </control>
+            <control type="list" id="4001">
+                <top>40</top>
+                <width>1800</width>
+                <height>150</height>
+                <orientation>horizontal</orientation>
+                <itemlayout width="250" height="150">
+                    <control type="image">
+                        <width>250</width>
+                        <height>150</height>
+                        <texture>$INFO[ListItem.Art(poster)]</texture>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="250" height="150">
+                    <control type="image">
+                        <width>250</width>
+                        <height>150</height>
+                        <texture>$INFO[ListItem.Art(poster)]</texture>
+                        <colordiffuse>FFFFAA00</colordiffuse>
+                    </control>
+                </focusedlayout>
+                <onup>3001</onup>
+            </control>
+        </control>
+    </controls>
+</window>
