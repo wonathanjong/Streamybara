@@ -1,10 +1,9 @@
 """Simple onboarding wizard for first time setup."""
 
-import xbmcgui
 import xbmc
+import xbmcgui
 
 from resources.lib.modules.globals import g
-from resources.lib.modules.validation import verify_provider, verify_trakt
 
 
 class OnboardingWizard:
@@ -12,20 +11,24 @@ class OnboardingWizard:
         if g.get_bool_setting("general.onboarding_complete"):
             return
 
-        steps = [
-            self._welcome,
-            self._configure_provider,
-            self._configure_trakt,
-            self._configure_scraper,
-            self._select_resolution,
-        ]
-        for step in steps:
-            if g.abort_requested():
-                return
-            if not step():
-                return
-        g.set_setting("general.onboarding_complete", True)
-        xbmcgui.Dialog().ok(g.ADDON_NAME, g.get_language_string(30704))
+        g.set_runtime_setting("onboarding_active", True)
+        try:
+
+            steps = [
+                self._welcome,
+                self._configure_accounts,
+                self._configure_scraper,
+                self._select_resolution,
+            ]
+            for step in steps:
+                if g.abort_requested():
+                    return
+                if not step():
+                    return
+            g.set_setting("general.onboarding_complete", True)
+            xbmcgui.Dialog().ok(g.ADDON_NAME, g.get_language_string(30704))
+        finally:
+            g.clear_runtime_setting("onboarding_active")
 
     def _welcome(self):
         return xbmcgui.Dialog().yesno(
@@ -34,39 +37,27 @@ class OnboardingWizard:
             g.get_language_string(30701),
         )
 
-    def _configure_provider(self):
-        options = ["Real-Debrid", "AllDebrid"]
+    def _configure_accounts(self):
+        options = [
+            g.get_language_string(30131),
+            g.get_language_string(30339),
+            g.get_language_string(30150),
+            g.get_language_string(30337),
+            g.get_language_string(30564),
+        ]
+        actions = [
+            "authTrakt",
+            "authPremiumize",
+            "authRealDebrid",
+            "authAllDebrid",
+        ]
         while True:
-            choice = xbmcgui.Dialog().select(
-                g.get_language_string(30702), options
+            choice = xbmcgui.Dialog().contextmenu(options)
+            if choice in (-1, len(options) - 1):
+                return True
+            xbmc.executebuiltin(
+                f"RunPlugin(plugin://{g.ADDON_ID}/?action={actions[choice]})"
             )
-            if choice == -1:
-                return False
-            while True:
-                token = xbmcgui.Dialog().input(g.get_language_string(30726))
-                if token is None:
-                    return False
-                if verify_provider(token):
-                    g.set_setting("debrid.provider", options[choice])
-                    g.set_setting("debrid.token", token)
-                    return True
-                xbmcgui.Dialog().ok(g.ADDON_NAME, g.get_language_string(30727))
-
-    def _configure_trakt(self):
-        if not xbmcgui.Dialog().yesno(
-            g.ADDON_NAME,
-            g.get_language_string(30707),
-        ):
-            return False
-        while True:
-            key = xbmcgui.Dialog().input(g.get_language_string(30728))
-            if not key:
-                return False
-            if verify_trakt(key):
-                g.set_setting("trakt.api_key", key)
-                break
-            xbmcgui.Dialog().ok(g.ADDON_NAME, g.get_language_string(30729))
-        return True
 
     def _configure_scraper(self):
         text = xbmcgui.Dialog().input(

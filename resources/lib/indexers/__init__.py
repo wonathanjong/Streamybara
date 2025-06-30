@@ -20,6 +20,9 @@ def trakt_auth_guard(func):
         """
         if g.get_setting("trakt.auth"):
             return func(*args, **kwargs)
+        if g.get_bool_runtime_setting("onboarding_active"):
+            g.log("Skipping Trakt auth prompt during onboarding", "debug")
+            return
         with GlobalLock("trakt.auth_guard"):
             if not g.get_setting("trakt.auth"):
                 if xbmcgui.Dialog().yesno(g.ADDON_NAME, g.get_language_string(30471)):
