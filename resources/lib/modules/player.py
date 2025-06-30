@@ -17,7 +17,7 @@ from resources.lib.modules import smartPlay
 from resources.lib.modules.globals import g
 
 
-class SerenPlayer(xbmc.Player):
+class StreamybaraPlayer(xbmc.Player):
     """
     Class to handle playback methods and accept callbacks from Kodi player
     """
@@ -538,7 +538,7 @@ class SerenPlayer(xbmc.Player):
                 self._trakt_stop_watching()
 
             if self.dialogs_enabled and not self.dialogs_triggered and time_left <= self.playing_next_time:
-                xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=runPlayerDialogs")')
+                xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=runPlayerDialogs")')
                 self.dialogs_triggered = True
 
         if not self._playback_has_stopped():  # Kodi does not fire the onPlaybackStopped event if early in playback

@@ -45,14 +45,14 @@
             <width>1800</width>
             <height>360</height>
             <control type="label">
-                <label>$ADDON[plugin.video.seren 30715]</label>
+                <label>$ADDON[plugin.video.streamybara 30715]</label>
             </control>
             <control type="button" id="2002">
                 <left>1700</left>
                 <top>0</top>
                 <width>100</width>
                 <height>40</height>
-                <label>$ADDON[plugin.video.seren 30730]</label>
+                <label>$ADDON[plugin.video.streamybara 30730]</label>
             </control>
             <control type="list" id="2001">
                 <top>40</top>
@@ -100,14 +100,14 @@
             <width>1800</width>
             <height>360</height>
             <control type="label">
-                <label>$ADDON[plugin.video.seren 30716]</label>
+                <label>$ADDON[plugin.video.streamybara 30716]</label>
             </control>
             <control type="button" id="3002">
                 <left>1700</left>
                 <top>0</top>
                 <width>100</width>
                 <height>40</height>
-                <label>$ADDON[plugin.video.seren 30730]</label>
+                <label>$ADDON[plugin.video.streamybara 30730]</label>
             </control>
             <control type="list" id="3001">
                 <top>40</top>
@@ -155,14 +155,14 @@
             <width>1800</width>
             <height>200</height>
             <control type="label">
-                <label>$ADDON[plugin.video.seren 30723]</label>
+                <label>$ADDON[plugin.video.streamybara 30723]</label>
             </control>
             <control type="button" id="4002">
                 <left>1700</left>
                 <top>0</top>
                 <width>100</width>
                 <height>40</height>
-                <label>$ADDON[plugin.video.seren 30730]</label>
+                <label>$ADDON[plugin.video.streamybara 30730]</label>
             </control>
             <control type="list" id="4001">
                 <top>40</top>

@@ -114,7 +114,7 @@ class Manager:
         :param url_hash: string
         :return: bool
         """
-        with GlobalLock("SerenDownloaderUpdate"):
+        with GlobalLock("StreamybaraDownloaderUpdate"):
             self._get_download_index()
             if url_hash in self.download_ids:
                 xbmcgui.Dialog().notification(g.ADDON_NAME, g.get_language_string(30644))
@@ -133,7 +133,7 @@ class Manager:
         :return: None
         """
         self._get_download_index()
-        with GlobalLock("SerenDownloaderUpdate"):
+        with GlobalLock("StreamybaraDownloaderUpdate"):
             self._get_download_index()
             g.clear_runtime_setting(f"sdm.{url_hash}")
             if url_hash in self.download_ids:

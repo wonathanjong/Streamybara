@@ -103,7 +103,7 @@ class SourceSorter:
             yield source
 
     def sort_sources(self, sources_list):
-        """Takes in a list of sources and filters and sorts them according to Seren's sort settings
+        """Takes in a list of sources and filters and sorts them according to Streamybara's sort settings
 
         :param sources_list: list of sources
         :type sources_list: list
@@ -129,7 +129,7 @@ class SourceSorter:
 
     def _get_sort_methods(self):
         """
-        Get Seren settings for sort methods
+        Get Streamybara settings for sort methods
         """
         sort_methods = []
         sort_method_settings = {
@@ -172,7 +172,7 @@ class SourceSorter:
 
     def _get_type_sort_order(self):
         """
-        Get seren settings for type sort priority
+        Get streamybara settings for type sort priority
         """
         type_priorities = {}
         type_priority_settings = {
@@ -193,7 +193,7 @@ class SourceSorter:
 
     def _get_hdr_sort_order(self):
         """
-        Get seren settings for type sort priority
+        Get streamybara settings for type sort priority
         """
         hdr_priorities = {}
         hdr_priority_settings = {
@@ -211,7 +211,7 @@ class SourceSorter:
 
     def _get_debrid_sort_order(self):
         """
-        Get seren settings for debrid sort priority
+        Get streamybara settings for debrid sort priority
         """
         debrid_priorities = {}
         debrid_priority_settings = {

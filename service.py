@@ -12,8 +12,8 @@ if tools.is_stub():
 
 from resources.lib.modules.globals import g
 
-from resources.lib.modules.seren_version import do_version_change
-from resources.lib.modules.serenMonitor import SerenMonitor
+from resources.lib.modules.streamybara_version import do_version_change
+from resources.lib.modules.streamybaraMonitor import StreamybaraMonitor
 from resources.lib.modules.update_news import do_update_news
 from resources.lib.modules.manual_timezone import validate_timezone_detected
 
@@ -29,9 +29,9 @@ g.log(f"### Detected Kodi Version: {g.KODI_VERSION}")
 g.log(f"### Detected timezone: {repr(g.LOCAL_TIMEZONE.zone)}")
 g.log("#############  SERVICE ENTERED KEEP ALIVE  #################")
 
-monitor = SerenMonitor()
+monitor = StreamybaraMonitor()
 try:
-    xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=longLifeServiceManager")')
+    xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=longLifeServiceManager")')
 
     do_update_news()
     validate_timezone_detected()
@@ -43,17 +43,17 @@ try:
             "warning",
         )
 
-    xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=torrentCacheCleanup")')
+    xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=torrentCacheCleanup")')
 
     g.wait_for_abort(30)  # Sleep for a half a minute to allow widget loads to complete.
     while not monitor.abortRequested():
-        xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=runMaintenance")')
+        xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=runMaintenance")')
         if not g.wait_for_abort(15):  # Sleep to make sure tokens refreshed during maintenance
-            xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=syncTraktActivities")')
+            xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=syncTraktActivities")')
         if not g.wait_for_abort(15):  # Sleep to make sure we don't possibly clobber settings
-            xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=cleanOrphanedMetadata")')
+            xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=cleanOrphanedMetadata")')
         if not g.wait_for_abort(15):  # Sleep to make sure we don't possibly clobber settings
-            xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=updateLocalTimezone")')
+            xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=updateLocalTimezone")')
         if g.wait_for_abort(60 * randint(13, 17)):
             break
 finally:

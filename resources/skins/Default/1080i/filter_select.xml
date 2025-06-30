@@ -26,7 +26,7 @@
 
             <!-- Fanart -->
             <control type="image">
-                <texture background="true">$INFO[Window().Property(seren.fanart)]</texture>
+                <texture background="true">$INFO[Window().Property(streamybara.fanart)]</texture>
                 <colordiffuse>66FFFFFF</colordiffuse>
             </control>
 
@@ -43,7 +43,7 @@
             <left>40</left>
             <width>100%</width>
             <height>50</height>
-            <label>[UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]Seren[/COLOR] - $ADDON[plugin.video.seren 30618][/UPPERCASE]</label>
+            <label>[UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]Streamybara[/COLOR] - $ADDON[plugin.video.streamybara 30618][/UPPERCASE]</label>
             <font>font37</font>
             <textcolor>white</textcolor>
         </control>
@@ -69,7 +69,7 @@
 				<font>font12</font>
 				<textcolor>FFFFFFFF</textcolor>
 				<align>left</align>
-				<label>[B][UPPERCASE]$ADDON[plugin.video.seren 30619][/UPPERCASE][/B]</label>
+				<label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30619][/UPPERCASE][/B]</label>
 			</control>
 
 			<!-- Scrollbar -->
@@ -238,7 +238,7 @@
 				<font>font12</font>
 				<textcolor>FFFFFFFF</textcolor>
 				<align>left</align>
-				<label>[B][UPPERCASE]$ADDON[plugin.video.seren 30620][/UPPERCASE][/B]</label>
+				<label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30620][/UPPERCASE][/B]</label>
 			</control>
 
 			<!-- Scrollbar -->
@@ -407,7 +407,7 @@
 				<font>font12</font>
 				<textcolor>FFFFFFFF</textcolor>
 				<align>left</align>
-				<label>[B][UPPERCASE]$ADDON[plugin.video.seren 30621][/UPPERCASE][/B]</label>
+				<label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30621][/UPPERCASE][/B]</label>
 			</control>
 
 			<!-- Scrollbar -->
@@ -577,7 +577,7 @@
 				<font>font12</font>
 				<textcolor>FFFFFFFF</textcolor>
 				<align>left</align>
-				<label>[B][UPPERCASE]$ADDON[plugin.video.seren 30575][/UPPERCASE][/B]</label>
+				<label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30575][/UPPERCASE][/B]</label>
 			</control>
 
 			<!-- Scrollbar -->
@@ -747,7 +747,7 @@
 				<font>font12</font>
 				<textcolor>FFFFFFFF</textcolor>
 				<align>left</align>
-				<label>[B][UPPERCASE]$ADDON[plugin.video.seren 30608][/UPPERCASE][/B]</label>
+				<label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30608][/UPPERCASE][/B]</label>
 			</control>
 
 			<!-- Scrollbar -->
@@ -923,7 +923,7 @@
 						<textoffsetx>20</textoffsetx>
 						<texturefocus colordiffuse="$INFO[Window().Property(settings.color)]">white.png</texturefocus>
 						<texturenofocus colordiffuse="22000000">white.png</texturenofocus>
-						<label>$ADDON[plugin.video.seren 30459]</label>
+						<label>$ADDON[plugin.video.streamybara 30459]</label>
 						<align>right</align>
 						<textcolor>FFFFFFFF</textcolor>
 					</control>

@@ -35,7 +35,7 @@
 			</control>
 		</control>
 
-		<!-- Seren Logo -->
+		<!-- Streamybara Logo -->
 		<control type="image">
 			<animation effect="fade" time="350">WindowOpen</animation>
 			<centerleft>50%</centerleft>
@@ -44,7 +44,7 @@
 			<aligny>center</aligny>
 			<width>335</width>
 			<aspectratio>keep</aspectratio>
-			<texture>$INFO[Window().Property(seren.logo)]</texture>
+			<texture>$INFO[Window().Property(streamybara.logo)]</texture>
 			<visible>String.IsEqual(Window().Property(process_started),false) | String.IsEmpty(Window().Property(item.art.clearlogo))</visible>
 		</control>
 

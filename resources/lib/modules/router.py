@@ -16,7 +16,7 @@ def dispatch(params):
     action_args = params.get("action_args")
     pack_select = params.get("packSelect")
     source_select = params.get("source_select") == "true"
-    overwrite_cache = params.get("seren_reload") == "true"
+    overwrite_cache = params.get("streamybara_reload") == "true"
     resume = params.get("resume")
     preferred_quality = params.get("preferred")
     force_resume_check = params.get("forceresumecheck") == "true"
@@ -26,7 +26,7 @@ def dispatch(params):
     mediatype = params.get("mediatype")
     endpoint = params.get("endpoint")
 
-    g.log(f"Seren, Running Path - {g.REQUEST_PARAMS}")
+    g.log(f"Streamybara, Running Path - {g.REQUEST_PARAMS}")
     push(g.create_url(f"plugin://{g.ADDON_ID}", params))
 
     if action is None:
@@ -207,7 +207,7 @@ def dispatch(params):
             from resources.lib.modules import player
 
             try:
-                seren_player = player.SerenPlayer()
+                seren_player = player.StreamybaraPlayer()
                 seren_player.play_source(stream_link, item_information, resume_time=resume_time)
             finally:
                 if background:

@@ -231,7 +231,7 @@ def compare_version_numbers(current, new, include_same=False):
 def get_item_information(action_args):
     """
     Ease of use tool to retrieve items meta from TraktSyncDatabase based on action arguments
-    :param action_args: action arguments received in call to Seren
+    :param action_args: action arguments received in call to Streamybara
     :type action_args: dict
     :return: Metadata for item
     :rtype: dict

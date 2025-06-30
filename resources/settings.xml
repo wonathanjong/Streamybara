@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <settings version="1">
-	<section id="plugin.video.seren">
+	<section id="plugin.video.streamybara">
 		<category id="general" label="30084" help="">
 			<group id="1" label="30591">
                                 <setting id="searchHistory" type="boolean" label="30161" help="">
@@ -15,7 +15,7 @@
                                 </setting>
                                 <setting id="general.runOnboarding" type="action" label="30708" help="">
                                         <level>1</level>
-                                        <data>RunPlugin(plugin://plugin.video.seren/?action=runOnboarding)</data>
+                                        <data>RunPlugin(plugin://plugin.video.streamybara/?action=runOnboarding)</data>
                                         <constraints>
                                                 <allowempty>true</allowempty>
                                         </constraints>
@@ -309,7 +309,7 @@
 						<allowempty>true</allowempty>
 					</constraints>
 				</setting>
-				<setting id="seren.version" type="string" help="">
+				<setting id="streamybara.version" type="string" help="">
 					<level>4</level>
 					<default/>
 					<constraints>
@@ -333,7 +333,7 @@
 				</setting>
 				<setting id="general.textColorSelect" type="action" label="30102" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=colorPicker)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=colorPicker)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -350,7 +350,7 @@
 				</setting>
 				<setting id="skin.active" type="string" label="30200" help="">
 					<level>0</level>
-					<default>Seren Default</default>
+					<default>Streamybara Default</default>
 					<enable>false</enable>
 					<control type="edit" format="string">
 						<heading>30200</heading>
@@ -358,7 +358,7 @@
 				</setting>
 				<setting id="skin.install" type="action" label="30203" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=installSkin)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=installSkin)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -366,7 +366,7 @@
 				</setting>
 				<setting id="skin.uninstall" type="action" label="30202" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=uninstallSkin)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=uninstallSkin)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -374,7 +374,7 @@
 				</setting>
 				<setting id="skin.switch" type="action" label="30201" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=switchSkin)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=switchSkin)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -382,7 +382,7 @@
 				</setting>
 				<setting id="skin.checkSkinUpdates" type="action" label="30139" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=checkSkinUpdates)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=checkSkinUpdates)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -835,7 +835,7 @@
 				</setting>
 				<setting id="trakt.authTrakt" type="action" label="30131" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=authTrakt)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=authTrakt)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -898,7 +898,7 @@
 				</setting>
 				<setting id="trakt.revokeTrakt" type="action" label="30133" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=revokeTrakt)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=revokeTrakt)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -920,7 +920,7 @@
 				</setting>
 				<setting id="premiumize.auth" type="action" label="30339" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=authPremiumize)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=authPremiumize)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -1076,7 +1076,7 @@
 				</setting>
 				<setting id="rd.authRealDebrid" type="action" label="30150" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=authRealDebrid)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=authRealDebrid)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -1160,7 +1160,7 @@
 				</setting>
 				<setting id="alldebrid.authAllDebrid" type="action" label="30337" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=authAllDebrid)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=authAllDebrid)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -1216,7 +1216,7 @@
 			<group id="2" label="30140">
 				<setting id="providers.manualProviderUpdate" type="action" label="30139" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=manualProviderUpdate)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=manualProviderUpdate)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -1224,7 +1224,7 @@
 				</setting>
 				<setting id="providers.manageProviders" type="action" label="30140" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=manageProviders)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=manageProviders)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -1466,7 +1466,7 @@
 			<group id="1" label="30117">
 				<setting id="general.chooseFilters" type="action" label="30617" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=chooseFilters)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=chooseFilters)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -1625,7 +1625,7 @@
 			<group id="2" label="30149">
 				<setting id="general.chooseSorting" type="action" label="30633" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=chooseSorting)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=chooseSorting)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2169,7 +2169,7 @@
 			<group id="1" label="30028">
 				<setting id="cache.clear" type="action" label="30028" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=clearCache)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=clearCache)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2177,7 +2177,7 @@
 				</setting>
 				<setting id="cache.cleartorrent" type="action" label="30039" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=clearTorrentCache)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=clearTorrentCache)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2185,7 +2185,7 @@
 				</setting>
 				<setting id="cache.clearsearch" type="action" label="30180" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=clearSearchHistory)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=clearSearchHistory)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2193,7 +2193,7 @@
 				</setting>
 				<setting id="cache.wipeaddon" type="action" label="30041" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=cleanInstall)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=cleanInstall)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2205,7 +2205,7 @@
 			<group id="2" label="30215">
 				<setting id="traktdb.flush" type="action" label="30216" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=flushTraktActivities)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=flushTraktActivities)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2213,7 +2213,7 @@
 				</setting>
 				<setting id="traktdb.force" type="action" label="30217" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=forceTraktSync)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=forceTraktSync)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2221,7 +2221,7 @@
 				</setting>
 				<setting id="traktdb.rebuild" type="action" label="30218" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=rebuildTraktDatabase)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=rebuildTraktDatabase)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2231,7 +2231,7 @@
 			<group id="3" label="30546">
 				<setting id="windowtests.testPlayingNext" type="action" label="30462" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=testPlayingNext)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=testPlayingNext)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2239,7 +2239,7 @@
 				</setting>
 				<setting id="windowtests.testStillWatching" type="action" label="30463" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=testStillWatching)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=testStillWatching)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2247,7 +2247,7 @@
 				</setting>
 				<setting id="windowtests.testGetSourcesWindow" type="action" label="30613" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=testGetSourcesWindow)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=testGetSourcesWindow)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2255,7 +2255,7 @@
 				</setting>
 				<setting id="windowtests.testResolverWindow" type="action" label="30464" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=testResolverWindow)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=testResolverWindow)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2263,7 +2263,7 @@
 				</setting>
 				<setting id="windowtests.testSourceSelectWindow" type="action" label="30465" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=testSourceSelectWindow)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=testSourceSelectWindow)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2271,7 +2271,7 @@
 				</setting>
 				<setting id="windowtests.testManualCacheWindow" type="action" label="30466" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=testManualCacheWindow)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=testManualCacheWindow)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2279,7 +2279,7 @@
 				</setting>
 				<setting id="windowtests.testDownloadManagerWindow" type="action" label="30625" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=testDownloadManagerWindow)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=testDownloadManagerWindow)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2586,7 +2586,7 @@
 				</setting>
 				<setting id="general.chooseTimeZone" type="action" label="30548" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=chooseTimeZone)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=chooseTimeZone)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>
@@ -2622,7 +2622,7 @@
 				</setting>
 				<setting id="reuselanguageinvoker.toggle" type="action" label="30533" help="">
 					<level>0</level>
-					<data>RunPlugin(plugin://plugin.video.seren/?action=toggleLanguageInvoker)</data>
+					<data>RunPlugin(plugin://plugin.video.streamybara/?action=toggleLanguageInvoker)</data>
 					<constraints>
 						<allowempty>true</allowempty>
 					</constraints>

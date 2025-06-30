@@ -141,7 +141,7 @@ class TraktSyncDatabase(trakt_sync.TraktSyncDatabase):
 
         if not self.sync_errors:
             self._update_activity_record("all_activities", update_time)
-            xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=widgetRefresh&playing=False")')
+            xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=widgetRefresh&playing=False")')
 
     def _do_sync_acitivites(self, remote_activities):
         total_activities = len(self._sync_activities_list)
@@ -179,7 +179,7 @@ class TraktSyncDatabase(trakt_sync.TraktSyncDatabase):
             xbmc.sleep(500)
             self.silent = False
             self.progress_dialog = xbmcgui.DialogProgressBG()
-            self.progress_dialog.create(f"{g.ADDON_NAME}Sync", "Seren: Trakt Sync")
+            self.progress_dialog.create(f"{g.ADDON_NAME}Sync", "Streamybara: Trakt Sync")
 
     def _sync_movie_bookmarks(self):
         try:

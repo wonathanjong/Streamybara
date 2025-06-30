@@ -145,7 +145,7 @@
 								<textcolor>66FFFFFF</textcolor>
 								<align>left</align>
 								<left>620</left>
-								<label>[UPPERCASE]$ADDON[plugin.video.seren 30251]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR][/UPPERCASE]</label>
+								<label>[UPPERCASE]$ADDON[plugin.video.streamybara 30251]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR][/UPPERCASE]</label>
 							</control>
 
 							<!-- Source Type -->
@@ -155,7 +155,7 @@
 								<font>font12</font>
 								<align>right</align>
 								<textcolor>66FFFFFF</textcolor>
-								<label>[UPPERCASE]$ADDON[plugin.video.seren 30252]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE]</label>
+								<label>[UPPERCASE]$ADDON[plugin.video.streamybara 30252]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE]</label>
 							</control>
 						</control>
 
@@ -248,7 +248,7 @@
 								<textcolor>66FFFFFF</textcolor>
 								<align>left</align>
 								<left>620</left>
-								<label>[UPPERCASE]$ADDON[plugin.video.seren 30251]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR][/UPPERCASE]</label>
+								<label>[UPPERCASE]$ADDON[plugin.video.streamybara 30251]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR][/UPPERCASE]</label>
 							</control>
 
 							<!-- Source Type -->
@@ -258,7 +258,7 @@
 								<font>font12</font>
 								<align>right</align>
 								<textcolor>66FFFFFF</textcolor>
-								<label>[UPPERCASE]$ADDON[plugin.video.seren 30252]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE]</label>
+								<label>[UPPERCASE]$ADDON[plugin.video.streamybara 30252]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE]</label>
 							</control>
 						</control>
 
@@ -322,10 +322,10 @@
                         <width>200</width>
                         <height>200</height>
 
-						<!-- Seren Peacock -->
+						<!-- Streamybara Peacock -->
                         <control type="image">
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[Window().Property(seren.logo)]</texture>
+                            <texture>$INFO[Window().Property(streamybara.logo)]</texture>
                             <visible>String.IsEmpty(ListItem.Property(source.icon))</visible>
                         </control>
 
@@ -392,7 +392,7 @@
                             <font>font12</font>
                             <textcolor>FFFFFFFF</textcolor>
                             <align>right</align>
-                            <label>[B][UPPERCASE]$ADDON[plugin.video.seren 30251]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR][/UPPERCASE][/B]</label>
+                            <label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30251]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR][/UPPERCASE][/B]</label>
                         </control>
 
 						<!-- Resolution -->
@@ -404,7 +404,7 @@
                             <font>font12</font>
                             <align>right</align>
                             <textcolor>FFFFFFFF</textcolor>
-                            <label>[B][UPPERCASE]$ADDON[plugin.video.seren 30237]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(quality)][/COLOR][/UPPERCASE][/B]</label>
+                            <label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30237]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(quality)][/COLOR][/UPPERCASE][/B]</label>
                         </control>
 
 						<!-- Source Type -->
@@ -416,7 +416,7 @@
                             <font>font12</font>
                             <align>right</align>
                             <textcolor>FFFFFFFF</textcolor>
-                            <label>[B][UPPERCASE]$ADDON[plugin.video.seren 30252]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE][/B]</label>
+                            <label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30252]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE][/B]</label>
                         </control>
 
 						<!-- Info -->
@@ -497,7 +497,7 @@
                         <textcolor>FFFFFFFF</textcolor>
                         <align>right</align>
                         <visible>String.IsEmpty(Window().Property(item.info.season))</visible>
-                        <label>$ADDON[plugin.video.seren 30557]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[Window().Property(item.info.year)] [/COLOR] | $ADDON[plugin.video.seren 30558]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[Window().Property(item.info.mpaa)][/COLOR]</label>
+                        <label>$ADDON[plugin.video.streamybara 30557]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[Window().Property(item.info.year)] [/COLOR] | $ADDON[plugin.video.streamybara 30558]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[Window().Property(item.info.mpaa)][/COLOR]</label>
                     </control>
                 </control>
             </control>
@@ -551,7 +551,7 @@
                         <textoffsetx>20</textoffsetx>
                         <texturefocus colordiffuse="$INFO[Window().Property(settings.color)]">white.png</texturefocus>
                         <texturenofocus colordiffuse="22000000">white.png</texturenofocus>
-                        <label>$ADDON[plugin.video.seren 30461]</label>
+                        <label>$ADDON[plugin.video.streamybara 30461]</label>
                         <align>right</align>
                         <textcolor>FFFFFFFF</textcolor>
                     </control>
@@ -562,7 +562,7 @@
                         <textoffsetx>20</textoffsetx>
                         <texturefocus colordiffuse="$INFO[Window().Property(settings.color)]">white.png</texturefocus>
                         <texturenofocus colordiffuse="22000000">white.png</texturenofocus>
-                        <label>$ADDON[plugin.video.seren 30459]</label>
+                        <label>$ADDON[plugin.video.streamybara 30459]</label>
                         <align>right</align>
                         <textcolor>FFFFFFFF</textcolor>
                     </control>

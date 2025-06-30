@@ -27,7 +27,7 @@ def get(func, duration, *args, **kwargs):
     if cached_data == g.CACHE.NOT_CACHED:
         cached_data = None
     global_cache_ignore = False
-    ignore_cache = kwargs.pop("seren_reload", kwargs.get("ignore_cache", False))
+    ignore_cache = kwargs.pop("streamybara_reload", kwargs.get("ignore_cache", False))
     overwrite_cache = kwargs.pop("overwrite_cache", False)
     if cached_data is not None and ignore_cache and not global_cache_ignore:
         return cached_data
