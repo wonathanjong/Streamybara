@@ -12,7 +12,7 @@ from resources.lib.modules.exceptions import SkinNotFoundException
 from resources.lib.modules.globals import g
 from resources.lib.modules.zip_manager import ZipManager
 
-DEFAULT_SKIN_NAME = "Seren Default"
+DEFAULT_SKIN_NAME = "Streamybara Default"
 
 schema = {
     "skins": {
@@ -34,7 +34,7 @@ schema = {
 
 class SkinManager(Database, ZipManager):
     """
-    Class for handling of installed custom themes for Seren
+    Class for handling of installed custom themes for Streamybara
     """
 
     def __init__(self):
@@ -43,8 +43,8 @@ class SkinManager(Database, ZipManager):
         # This is a list of default skins that may not be overwritten
         self.seren_skins = [DEFAULT_SKIN_NAME]
         self.installed_skins = self._get_all_installed()
-        if "Seren Fox" in [i["skin_name"] for i in self.installed_skins]:
-            self.execute_sql("DELETE FROM [skins] where [skin_name] = 'Seren Fox'")
+        if "Streamybara Fox" in [i["skin_name"] for i in self.installed_skins]:
+            self.execute_sql("DELETE FROM [skins] where [skin_name] = 'Streamybara Fox'")
             self._mark_skin_active(DEFAULT_SKIN_NAME)
             self.installed_skins = self._get_all_installed()
         self._active_skin_path = self._get_active_skin_path()
@@ -290,7 +290,7 @@ class SkinManager(Database, ZipManager):
 
     def install_skin(self, zip_location=None, silent=False):
         """
-        Method to install a new theme into Seren
+        Method to install a new theme into Streamybara
         :param zip_location: Optional url to fetch zip file from
         :type zip_location: str
         :param silent: Optional argument to disable user feedback

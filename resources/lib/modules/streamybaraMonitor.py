@@ -7,7 +7,7 @@ from resources.lib.modules.globals import g
 ONWAKE_NETWORK_UP_DELAY = 5
 
 
-class SerenMonitor(xbmc.Monitor):
+class StreamybaraMonitor(xbmc.Monitor):
     def onSettingsChanged(self):
         callback_time = int(time.time())
         if g.get_int_runtime_setting("onSettingsChangedLastCalled") == callback_time:
@@ -30,10 +30,10 @@ class SerenMonitor(xbmc.Monitor):
             if not g.wait_for_abort(ONWAKE_NETWORK_UP_DELAY):  # Sleep for 5 seconds to make sure network is up
                 if g.PLATFORM == "android":
                     g.clear_runtime_setting("system.sleeping")
-                xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=runMaintenance")')
-                xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=torrentCacheCleanup")')
+                xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=runMaintenance")')
+                xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=torrentCacheCleanup")')
             if not g.wait_for_abort(15):  # Sleep to make sure tokens refreshed during maintenance
-                xbmc.executebuiltin('RunPlugin("plugin://plugin.video.seren/?action=syncTraktActivities")')
+                xbmc.executebuiltin('RunPlugin("plugin://plugin.video.streamybara/?action=syncTraktActivities")')
 
         if method == "System.OnSleep":
             g.log("System.OnSleep notification received", "info")

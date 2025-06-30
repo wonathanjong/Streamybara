@@ -914,10 +914,10 @@ msgstr "Retarder les dates de sortie d'un jour"
 #: /resources/lib/modules/router.py:515
 msgctxt "#30166"
 msgid ""
-"Another addon is attempting to install a provider into Seren\n"
+"Another addon is attempting to install a provider into Streamybara\n"
 "Do you wish to allow this?"
 msgstr ""
-"Un autre addon tente d'installer un provider dans Seren\n"
+"Un autre addon tente d'installer un provider dans Streamybara\n"
 "Souhaitez-vous l'autoriser ?"
 
 #: /resources/lib/modules/providers/install_manager.py:90
@@ -932,10 +932,10 @@ msgstr ""
 #: /resources/lib/modules/router.py:525
 msgctxt "#30168"
 msgid ""
-"Another addon is attempting to uninstall the {} provider from Seren\n"
+"Another addon is attempting to uninstall the {} provider from Streamybara\n"
 "Do you wish to allow this?"
 msgstr ""
-"Un autre module complémentaire tente de désinstaller le provider {} de Seren\n"
+"Un autre module complémentaire tente de désinstaller le provider {} de Streamybara\n"
 "Souhaitez-vous l'autoriser ?"
 
 #: /resources/lib/gui/tvshowMenus.py:169
@@ -2138,8 +2138,8 @@ msgstr "Clear your search history"
 
 #: /resources/lib/gui/homeMenu.py:136
 msgctxt "#30382"
-msgid "Open Seren's settings"
-msgstr "Ouvrir les paramètres de Seren"
+msgid "Open Streamybara's settings"
+msgstr "Ouvrir les paramètres de Streamybara"
 
 #: /resources/lib/gui/homeMenu.py:143
 msgctxt "#30383"
@@ -2166,16 +2166,16 @@ msgstr ""
 
 #: /resources/lib/gui/homeMenu.py:175
 msgctxt "#30386"
-msgid "Force Seren to check for updates for your installed provider(s)"
+msgid "Force Streamybara to check for updates for your installed provider(s)"
 msgstr ""
-"Forcer Seren à rechercher des mises à jour pour vos providers installés"
+"Forcer Streamybara à rechercher des mises à jour pour vos providers installés"
 
 #: /resources/lib/gui/homeMenu.py:182
 msgctxt "#30387"
-msgid "Open a window to enable/disable/install/uninstall providers in Seren"
+msgid "Open a window to enable/disable/install/uninstall providers in Streamybara"
 msgstr ""
 "Ouvre une fenêtre pour activer / désactiver / installer / désinstaller les "
-"providers dans Seren"
+"providers dans Streamybara"
 
 #: /resources/lib/gui/homeMenu.py:194
 msgctxt "#30388"
@@ -2184,9 +2184,9 @@ msgstr "Effacer le dernier horodatage de synchronisation"
 
 #: /resources/lib/gui/homeMenu.py:201
 msgctxt "#30389"
-msgid "Force Seren to perform a sync with Trakt's servers"
+msgid "Force Streamybara to perform a sync with Trakt's servers"
 msgstr ""
-"Forcer Seren à effectuer une synchronisation avec les serveurs de Trakt"
+"Forcer Streamybara à effectuer une synchronisation avec les serveurs de Trakt"
 
 #: /resources/lib/gui/homeMenu.py:208
 msgctxt "#30390"
@@ -2778,9 +2778,9 @@ msgstr "Sélection de fichier"
 
 #: /resources/settings.xml:420
 msgctxt "#30484"
-msgid "Disable Seren fanart fallback on items missing fanart"
+msgid "Disable Streamybara fanart fallback on items missing fanart"
 msgstr ""
-"Désactiver le remplacement de fanart Seren sur les éléments manquants fanart"
+"Désactiver le remplacement de fanart Streamybara sur les éléments manquants fanart"
 
 #: /resources/lib/modules/resolver/__init__.py:241
 msgctxt "#30485"
@@ -3028,11 +3028,11 @@ msgstr "Épisode {}"
 #: /resources/lib/modules/update_news.py:5
 msgctxt "#30530"
 msgid ""
-"Seren no longer has an update checker built in. \n"
+"Streamybara no longer has an update checker built in. \n"
 "\n"
 "If you wish to continue to be notified of updates, please ensure that you have the nixgates repository installed and either have automatic updates enabled or turn on notifications for addon updates in Kodi settings"
 msgstr ""
-"Seren n'a plus de vérificateur de mise à jour intégré.\n"
+"Streamybara n'a plus de vérificateur de mise à jour intégré.\n"
 "\n"
 " Si vous souhaitez continuer à être informé des mises à jour, assurez-vous que le référentiel nixgates est installé et que les mises à jour automatiques sont activées ou activez les notifications pour les mises à jour des modules complémentaires dans les paramètres Kodi."
 
@@ -3138,10 +3138,10 @@ msgstr "Impossible de détecter le fuseau horaire"
 #: /resources/lib/modules/manual_timezone.py:14
 msgctxt "#30550"
 msgid ""
-"Seren was unable to detect your local time zone automatically.  Would you "
+"Streamybara was unable to detect your local time zone automatically.  Would you "
 "like to set this now?"
 msgstr ""
-"Seren n'a pas pu détecter automatiquement votre fuseau horaire local. "
+"Streamybara n'a pas pu détecter automatiquement votre fuseau horaire local. "
 "Souhaitez-vous régler cela maintenant ?"
 
 #: /resources/skins/Default/1080i/download_manager.xml:137
@@ -3750,8 +3750,8 @@ msgctxt "#30652"
 msgid "Icon Only"
 msgstr "Icône uniquement"#: onboarding wizard
 msgctxt "#30700"
-msgid "Welcome to Seren"
-msgstr "Welcome to Seren"
+msgid "Welcome to Streamybara"
+msgstr "Welcome to Streamybara"
 
 msgctxt "#30701"
 msgid "Please complete the initial setup"

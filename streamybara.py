@@ -3,7 +3,7 @@ import sys
 from resources.lib.modules import router
 from resources.lib.modules.globals import g
 from resources.lib.gui.onboarding import OnboardingWizard
-from resources.lib.modules.serenMonitor import ONWAKE_NETWORK_UP_DELAY
+from resources.lib.modules.streamybaraMonitor import ONWAKE_NETWORK_UP_DELAY
 from resources.lib.modules.timeLogger import TimeLogger
 
 
@@ -27,7 +27,7 @@ def _sleeping_retry_handler():
     return not sleeping
 
 
-def seren_endpoint():
+def streamybara_endpoint():
     try:
         g.init_globals(sys.argv)
 
@@ -47,4 +47,4 @@ def seren_endpoint():
 
 
 if __name__ == "__main__":  # pragma: no cover
-    seren_endpoint()
+    streamybara_endpoint()

@@ -18,7 +18,7 @@ schema = {
 
 class PremiumizeTransfers(Database):
     """
-    Databsae for recording background transfer created by Seren
+    Databsae for recording background transfer created by Streamybara
     """
 
     def __init__(self):
@@ -27,7 +27,7 @@ class PremiumizeTransfers(Database):
 
     def get_premiumize_transfers(self):
         """
-        Fetch all transfer created by Seren not removed
+        Fetch all transfer created by Streamybara not removed
         :return: List of all transfers
         :rtype: list
         """

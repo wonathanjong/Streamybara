@@ -34,7 +34,7 @@
 		</control>
 
 
-		<!-- Seren Logo -->
+		<!-- Streamybara Logo -->
 		<control type="image">
 			<centerleft>50%</centerleft>
 			<bottom>80</bottom>
@@ -42,7 +42,7 @@
 			<aligny>center</aligny>
 			<width>335</width>
 			<aspectratio>keep</aspectratio>
-			<texture>$INFO[Window().Property(seren.logo)]</texture>
+			<texture>$INFO[Window().Property(streamybara.logo)]</texture>
 			<visible>String.IsEmpty(Window().Property(item.art.clearlogo))</visible>
 		</control>
 
@@ -85,10 +85,10 @@
 				<width>200</width>
 				<height>200</height>
 
-				<!-- Seren Peacock -->
+				<!-- Streamybara Peacock -->
 				<control type="image">
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[Window().Property(seren.logo)]</texture>
+					<texture>$INFO[Window().Property(streamybara.logo)]</texture>
 					<visible>String.IsEmpty(Window().Property(source.icon))</visible>
 				</control>
 
@@ -155,7 +155,7 @@
 					<font>font12</font>
 					<textcolor>FFFFFFFF</textcolor>
 					<align>right</align>
-					<label>[B][UPPERCASE]$ADDON[plugin.video.seren 30251]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[Window().Property(source_size)][/COLOR][/UPPERCASE][/B]</label>
+					<label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30251]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[Window().Property(source_size)][/COLOR][/UPPERCASE][/B]</label>
 				</control>
 
 				<!-- Resolution -->
@@ -167,7 +167,7 @@
 					<font>font12</font>
 					<align>right</align>
 					<textcolor>FFFFFFFF</textcolor>
-					<label>[B][UPPERCASE]$ADDON[plugin.video.seren 30237]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[Window().Property(source_resolution)][/COLOR][/UPPERCASE][/B]</label>
+					<label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30237]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[Window().Property(source_resolution)][/COLOR][/UPPERCASE][/B]</label>
 				</control>
 
 				<!-- Source Type -->
@@ -179,7 +179,7 @@
 					<font>font12</font>
 					<align>right</align>
 					<textcolor>FFFFFFFF</textcolor>
-					<label>[B][UPPERCASE]$ADDON[plugin.video.seren 30252]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[Window().Property(source_type)][/COLOR][/UPPERCASE][/B]</label>
+					<label>[B][UPPERCASE]$ADDON[plugin.video.streamybara 30252]: [COLOR $INFO[Window().Property(settings.color)]]$INFO[Window().Property(source_type)][/COLOR][/UPPERCASE][/B]</label>
 				</control>
 
 				<!-- Info -->

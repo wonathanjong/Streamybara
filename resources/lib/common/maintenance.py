@@ -55,7 +55,7 @@ def refresh_apis():
 
 def wipe_install():
     """
-    Destroys Seren's user_data folder for current user resetting addon to default
+    Destroys Streamybara's user_data folder for current user resetting addon to default
     :return: None
     :rtype: None
     """
@@ -78,7 +78,7 @@ def wipe_install():
 
 def premiumize_transfer_cleanup():
     """
-    Cleanup transfers created by Seren at Premiumize
+    Cleanup transfers created by Streamybara at Premiumize
     :return: None
     :rtype: NOne
     """
@@ -97,7 +97,7 @@ def premiumize_transfer_cleanup():
     if len(seren_transfers) == 0:
         g.log("No Premiumize transfers have been created")
         return
-    g.log("Premiumize Fair Usage is above threshold, cleaning up Seren transfers")
+    g.log("Premiumize Fair Usage is above threshold, cleaning up Streamybara transfers")
     for i in seren_transfers:
         service.delete_transfer(i["transfer_id"])
         premiumize_transfers.remove_premiumize_transfer(i["transfer_id"])

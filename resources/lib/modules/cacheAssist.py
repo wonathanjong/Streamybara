@@ -400,7 +400,7 @@ class CacheAssistHelper:
             debrid_class = self._get_cache_location()
 
         if not debrid_class:
-            xbmcgui.Dialog().ok("Seren", g.get_language_string(30186))
+            xbmcgui.Dialog().ok("Streamybara", g.get_language_string(30186))
             return
 
         return debrid_class[1](uncached_source, silent)

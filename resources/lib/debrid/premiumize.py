@@ -349,7 +349,7 @@ class Premiumize:
     @staticmethod
     def is_service_enabled():
         """
-        Check to confirm api is enabled in Seren
+        Check to confirm api is enabled in Streamybara
         :return:
         :rtype:
         """

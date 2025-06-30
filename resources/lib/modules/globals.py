@@ -342,8 +342,8 @@ class GlobalVariables:
         self._init_paths()
         self.DEFAULT_FANART = self.ADDON.getAddonInfo("fanart")
         self.DEFAULT_ICON = self.ADDON.getAddonInfo("icon")
-        self.DEFAULT_LOGO = f"{self.IMAGES_PATH}logo-seren-3.png"
-        self.DEFAULT_POSTER = f"{self.IMAGES_PATH}poster-seren-3.png"
+        self.DEFAULT_LOGO = f"{self.IMAGES_PATH}logo-streamybara-3.png"
+        self.DEFAULT_POSTER = f"{self.IMAGES_PATH}poster-streamybara-3.png"
         self.NEXT_PAGE_ICON = f"{self.IMAGES_PATH}next.png"
         self.init_request(argv)
         self._init_cache()
@@ -663,7 +663,7 @@ class GlobalVariables:
         with self.get_kodi_video_db_connection() as video_database:
             if file_ids := [
                 str(i["idFile"])
-                for i in video_database.fetchall("SELECT * FROM files WHERE strFilename LIKE '%plugin.video.seren%'")
+                for i in video_database.fetchall("SELECT * FROM files WHERE strFilename LIKE '%plugin.video.streamybara%'")
             ]:
                 video_database.execute_sql(
                     [
@@ -979,7 +979,7 @@ class GlobalVariables:
         """Get the user selected color setting when nothing is selecting it returns
         the default value (deepskyblue) or the default form the installed skin.
 
-        :return:Selected color from the user or the default from the skin or the Seren default (deepskyblue)
+        :return:Selected color from the user or the default from the skin or the Streamybara default (deepskyblue)
         :rtype:str
         """
         color = self.get_setting("general.displayColor")
@@ -1329,7 +1329,7 @@ class GlobalVariables:
                 tools.run_threaded(_execute_set_view_mode, view_type)
 
     def is_addon_visible(self):
-        return xbmc.getInfoLabel('Container.PluginName') == "plugin.video.seren"
+        return xbmc.getInfoLabel('Container.PluginName') == "plugin.video.streamybara"
 
     def cancel_directory(self):
         if g.FROM_WIDGET:
@@ -1561,7 +1561,7 @@ class GlobalVariables:
 
     def open_addon_settings(self, section_offset, setting_offset=None):
         """
-        Open seren settings at a particular section and setting
+        Open streamybara settings at a particular section and setting
         :param section_offset: Section number starting at 0
         :type section_offset: int
         :param setting_offset: Setting number within section, starting at 0.  Note that sep / lsep are counted.
