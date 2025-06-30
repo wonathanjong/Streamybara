@@ -590,16 +590,25 @@ def merge_dicts(*dict_args):
 
 
 def filter_dictionary(dictionary, *keys):
-    """Filters the dictionary with the supplied args
+    """Filters ``dictionary`` retaining only the supplied keys.
 
-    :param dictionary:Dictionary to filter
-    :type dictionary:dict
-    :param keys:Keys to filter on
-    :type keys:any
-    :return:Filtered dictionary
-    :rtype:dict
+    This function previously omitted keys when their value evaluated to
+    ``False`` (for example ``0`` or ``""``) due to using the value in the
+    comprehension's condition.  The implementation has been adjusted so that
+    all existing keys are returned regardless of the truthiness of their
+    values.
+
+    :param dictionary: Dictionary to filter
+    :type dictionary: dict
+    :param keys: Keys to retain in the returned dictionary
+    :type keys: Any
+    :return: Filtered dictionary or ``None`` if ``dictionary`` is falsy
+    :rtype: dict | None
     """
-    return {k: v for k in keys if (v := dictionary.get(k))} if dictionary else None
+    if not dictionary:
+        return None
+
+    return {k: dictionary[k] for k in keys if k in dictionary}
 
 
 def safe_dict_get(dictionary, *path):
