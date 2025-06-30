@@ -1,3 +1,6 @@
+Changelog 3.0.63
+[BUG] preserve falsy values in filter_dictionary
+
 Changelog 3.0.62
 [BUG] Optimised RD fix implementation
 [BUG] Improved RD season pack handling
