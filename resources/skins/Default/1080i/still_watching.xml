@@ -122,14 +122,14 @@
 						<height>20</height>
 						<font>font12</font>
 						<textcolor>ffffffff</textcolor>
-						<label>$ADDON[plugin.video.seren 30559]</label>
+						<label>$ADDON[plugin.video.streamybara 30559]</label>
 						<visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
 					</control>
 					<control type="label">
 						<height>20</height>
 						<font>font12</font>
 						<textcolor>ffffffff</textcolor>
-						<label>$ADDON[plugin.video.seren 30210]</label>
+						<label>$ADDON[plugin.video.streamybara 30210]</label>
 						<visible>Integer.IsGreater(Player.TimeRemaining,59)</visible>
 					</control>
 				</control>
@@ -145,7 +145,7 @@
 
 					<!-- Play Now -->
 					<control type="button" id="3001">
-						<label>$ADDON[plugin.video.seren 30560]</label>
+						<label>$ADDON[plugin.video.streamybara 30560]</label>
 						<height>56</height>
 						<width>auto</width>
 						<font>font12</font>
@@ -161,7 +161,7 @@
 
 					<!-- Stop -->
 					<control type="button" id="3003">
-						<label>$ADDON[plugin.video.seren 30561]</label>
+						<label>$ADDON[plugin.video.streamybara 30561]</label>
 						<height>56</height>
 						<width>auto</width>
 						<font>font12</font>
@@ -177,7 +177,7 @@
 
 					<!-- Close -->
 					<control type="button" id="3002">
-						<label>$ADDON[plugin.video.seren 30459]</label>
+						<label>$ADDON[plugin.video.streamybara 30459]</label>
 						<height>56</height>
 						<width>auto</width>
 						<font>font12</font>

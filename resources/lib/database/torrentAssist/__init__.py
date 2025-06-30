@@ -22,7 +22,7 @@ schema = {
 
 class TorrentAssist(Database):
     """
-    Database to monitor downloads of torrents initiated by Seren
+    Database to monitor downloads of torrents initiated by Streamybara
     """
 
     def __init__(self):

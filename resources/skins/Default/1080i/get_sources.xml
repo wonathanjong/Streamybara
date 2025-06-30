@@ -75,7 +75,7 @@
 			</control>
 		</control>
 
-		<!-- Seren Logo -->
+		<!-- Streamybara Logo -->
 		<control type="image">
 			<animation effect="fade" end="0" time="350">WindowClose</animation>
 			<animation effect="fade" end="0" time="350" condition="String.IsEqual(Window().Property(process_started),true) + !String.IsEmpty(Window().Property(item.art.clearlogo))">Conditional</animation>
@@ -85,7 +85,7 @@
 			<aligny>center</aligny>
 			<width>335</width>
 			<aspectratio>keep</aspectratio>
-			<texture>$INFO[Window().Property(seren.logo)]</texture>
+			<texture>$INFO[Window().Property(streamybara.logo)]</texture>
 			<visible>String.IsEqual(Window().Property(process_started),false) | String.IsEmpty(Window().Property(item.art.clearlogo))</visible>
 		</control>
 
@@ -314,7 +314,7 @@
 						<align>center</align>
 						<width>120</width>
 						<textcolor>FFDDDDDD</textcolor>
-						<label>$ADDON[plugin.video.seren 30610]</label>
+						<label>$ADDON[plugin.video.streamybara 30610]</label>
 					</control>
 
 					<control type="label">
@@ -375,7 +375,7 @@
 						<align>center</align>
 						<width>120</width>
 						<textcolor>FFDDDDDD</textcolor>
-						<label>$ADDON[plugin.video.seren 30057]</label>
+						<label>$ADDON[plugin.video.streamybara 30057]</label>
 					</control>
 
 					<control type="label">
@@ -437,7 +437,7 @@
 						<align>center</align>
 						<width>120</width>
 						<textcolor>FFDDDDDD</textcolor>
-						<label>$ADDON[plugin.video.seren 30248]</label>
+						<label>$ADDON[plugin.video.streamybara 30248]</label>
 					</control>
 
 					<control type="label">
@@ -499,7 +499,7 @@
 						<align>center</align>
 						<width>120</width>
 						<textcolor>FFDDDDDD</textcolor>
-						<label>$ADDON[plugin.video.seren 30058]</label>
+						<label>$ADDON[plugin.video.streamybara 30058]</label>
 					</control>
 
 					<control type="label">
@@ -561,7 +561,7 @@
 						<align>center</align>
 						<width>120</width>
 						<textcolor>FFDDDDDD</textcolor>
-						<label>$ADDON[plugin.video.seren 30249]</label>
+						<label>$ADDON[plugin.video.streamybara 30249]</label>
 					</control>
 
 					<control type="label">
@@ -623,7 +623,7 @@
 						<align>center</align>
 						<width>120</width>
 						<textcolor>FFDDDDDD</textcolor>
-						<label>$ADDON[plugin.video.seren 30470]</label>
+						<label>$ADDON[plugin.video.streamybara 30470]</label>
 					</control>
 
 					<control type="label">
@@ -685,7 +685,7 @@
 						<align>center</align>
 						<width>120</width>
 						<textcolor>FFDDDDDD</textcolor>
-						<label>$ADDON[plugin.video.seren 30631]</label>
+						<label>$ADDON[plugin.video.streamybara 30631]</label>
 					</control>
 
 					<control type="label">
@@ -746,7 +746,7 @@
 						<align>center</align>
 						<width>120</width>
 						<textcolor>$INFO[Window().Property(settings.color)]</textcolor>
-						<label>$ADDON[plugin.video.seren 30611]</label>
+						<label>$ADDON[plugin.video.streamybara 30611]</label>
 					</control>
 
 					<control type="label">
@@ -852,7 +852,7 @@
 					<font>font12</font>
 					<align>center</align>
 					<textcolor>FFDDDDDD</textcolor>
-					<label>$ADDON[plugin.video.seren 30250]: $INFO[Window().Property(remaining_providers_count)]</label>
+					<label>$ADDON[plugin.video.streamybara 30250]: $INFO[Window().Property(remaining_providers_count)]</label>
 					<visible>Integer.IsGreaterOrEqual(Window().Property(remaining_providers_count),10)</visible>
 				</control>
 

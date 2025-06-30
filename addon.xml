@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.seren" version="3.0.62" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.streamybara" version="3.0.62" name="Streamybara" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.addon" version="17.9.910" />
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.27.0" />
         <import addon="script.module.beautifulsoup4" version="4.9.3"/>
-        <import addon="context.seren" version="2.2.0"/>
+        <import addon="context.streamybara" version="2.2.0"/>
         <import addon="script.module.inputstreamhelper" version="0.5.10" optional="true"/>
         <import addon="script.module.unidecode" version="1.1.1"/>
         <import addon="script.module.myconnpy" version="8.0.18"/>
     </requires>
-    <extension point="xbmc.python.pluginsource" library="seren.py">
+    <extension point="xbmc.python.pluginsource" library="streamybara.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>false</reuselanguageinvoker>
-        <summary lang="en">Seren - Modular Multi-source Addon</summary>
-        <description lang="en">Seren is a modular provider based, cloud service streaming software that is tightly
-            interwoven with Trakt. Seren provides the freedom to view media from a single menu system from service
+        <summary lang="en">Streamybara - Modular Multi-source Addon</summary>
+        <description lang="en">Streamybara is a modular provider based, cloud service streaming software that is tightly
+            interwoven with Trakt. Streamybara provides the freedom to view media from a single menu system from service
             providers of the users choosing. Please Note: This addon requires the use of a compatible cloud service.
         </description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <forum/>
-        <website>https://github.com/nixgates/plugin.video.seren</website>
-        <source>https://github.com/nixgates/plugin.video.seren</source>
+        <website>https://github.com/nixgates/plugin.video.streamybara</website>
+        <source>https://github.com/nixgates/plugin.video.streamybara</source>
         <disclaimer lang="en">
             Last updated: November 29, 2024.
-            The information contained within the Seren software (the "Service") is for general information purposes
+            The information contained within the Streamybara software (the "Service") is for general information purposes
             only.
             The author assumes no responsibility for errors, omissions in the contents on the Service, nor does it
             assume responsibility for any material provided by any external services.
@@ -49,16 +49,16 @@
             at any time without prior notice.
             The author of this software does not warrant that the software is free of viruses or other harmful
             components.
-            Seren may contain links to external websites that are not provided or maintained by or in any way affiliated
+            Streamybara may contain links to external websites that are not provided or maintained by or in any way affiliated
             with the author.
             Please note that the author does not guarantee the accuracy, relevance, timeliness, or completeness of any
             information on these external websites.
         </disclaimer>
         <assets>
-            <icon>resources/images/ico-seren-3.png</icon>
-            <fanart>resources/images/fanart-seren-3.png</fanart>
-            <clearlogo>resources/images/logo-seren-3.png</clearlogo>
-            <poster>resources/images/poster-seren-3.png</poster>
+            <icon>resources/images/ico-streamybara-3.png</icon>
+            <fanart>resources/images/fanart-streamybara-3.png</fanart>
+            <clearlogo>resources/images/logo-streamybara-3.png</clearlogo>
+            <poster>resources/images/poster-streamybara-3.png</poster>
             <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
             <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
             <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
@@ -110,7 +110,7 @@
             [FEATURE] Better identification of WEB and BLURAY sources
             [FEATURE] Support clearlogo from TMDB
             [FEATURE] Prioritize Trakt airdate metadata
-            [FEATURE] Update Seren logo for 3.0.0
+            [FEATURE] Update Streamybara logo for 3.0.0
             [FEATURE] Icons for all menus
             [FEATURE] Support package and provider icons
             [FEATURE] Add Hebrew localizations
@@ -125,7 +125,7 @@
             [BUG] Fix TVDB Normalization error
             [BUG] Fix Most TV Show Episodes/Seasons don't have certification (MPAA)
             [BUG] Fix Awake from sleep sometimes misses plugin calls
-            [BUG] Fix Seren not playing some cached files from Premiumize
+            [BUG] Fix Streamybara not playing some cached files from Premiumize
             [BUG] Fix sort_select tries to read invalid settings
             [BUG] Fix Local time conversion not happening for movies releases
             [BUG] Fix Clear logo overlap on getSources window
@@ -158,7 +158,7 @@
             [FEATURE] Add enhanced filtering options
             [FEATURE] Improve release title info detection
             [FEATURE] Improved source statistics, filtering and pretermination
-            [FEATURE] Updated default seren skin
+            [FEATURE] Updated default Streamybara skin
             [FEATURE] Window class refactors
             [FEATURE] Add adaptive source selection when smartplaying
             [FEATURE] "Original" for TMDB for High artwork size
@@ -196,7 +196,7 @@
             [BUG] IndexError from sort_sources
             [BUG] TVDB errors when there is no item in the iterator
             [BUG] Shuffle Play not working when "Flatten Season Episodes" enabled
-            [BUG] Seren not passing aliases to a4kScrapers for movies
+            [BUG] Streamybara not passing aliases to a4kScrapers for movies
             [BUG] Cloud Scrapers don't find episodes that include year after title
             [BUG] Change NoPlayableSourcesExcetion to log at info level
             [BUG] Fix getSources progress calculation
@@ -281,7 +281,7 @@
             Some minor fixes and optimisations to tools and globals
             Minor performance improvement to the sqlite row factory
             Optimise TZ initialisation
-            Debounce onSettingsChanged callback in SerenMonitor
+            Debounce onSettingsChanged callback in StreamybaraMonitor
             Added database indices to episodes, movies, hidden and bookmarks tables
 
             Changelog 2.1.3
@@ -332,7 +332,7 @@
             Additional caching for metadata indexer endpoints
             Improve database handling code
             Improve timezone detection fallback handling
-            Make Seren python version agnostic
+            Make Streamybara python version agnostic
             Implemented a true settings cache
             Brought back test windows feature for skin developers
             Moved to kodi module version of unidecode
@@ -530,7 +530,7 @@
             Force table re-fresh is sync database fails to rebuild when updating
 
             Changelog 2.0.1:
-            Fix last_meta_update value to reflect new Seren version
+            Fix last_meta_update value to reflect new Streamybara version
 
             Changleog 2.0.0:
 
@@ -568,7 +568,7 @@
             OMDB API implemented
             Feedback provided at scrape if no providers are found
             Feedback provided at scrape if no debrid providers are setup
-            Debrid account status now visible from Seren settings
+            Debrid account status now visible from Streamybara settings
         </news>
     </extension>
 </addon>

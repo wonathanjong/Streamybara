@@ -27,8 +27,8 @@ class BaseWindow(xbmcgui.WindowXMLDialog):
         self.provider_class = ProviderInstallManager()
 
         self.setProperty('texture.white', f"{g.IMAGES_PATH}white.png")
-        self.setProperty('seren.logo', g.DEFAULT_LOGO)
-        self.setProperty('seren.fanart', g.DEFAULT_FANART)
+        self.setProperty('streamybara.logo', g.DEFAULT_LOGO)
+        self.setProperty('streamybara.fanart', g.DEFAULT_FANART)
         self.setProperty('settings.color', g.get_user_text_color())
         self.setProperty('test.pattern', f"{g.IMAGES_PATH}test_pattern.png")
         self.setProperty('skin.dir', SkinManager().confirm_skin_path(xml_file)[1])

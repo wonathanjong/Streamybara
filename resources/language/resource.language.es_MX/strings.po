@@ -1,6 +1,6 @@
 # Kodi Media Center language file
-# Addon Name: Seren
-# Addon id: plugin.video.Seren
+# Addon Name: Streamybara
+# Addon id: plugin.video.Streamybara
 # Addon Provider: Nixgates
 msgid ""
 msgstr ""
@@ -929,10 +929,10 @@ msgstr "Retraso de Fechas de Estreno por un día"
 #: /resources/lib/modules/router.py:515
 msgctxt "#30166"
 msgid ""
-"Another addon is attempting to install a provider into Seren\n"
+"Another addon is attempting to install a provider into Streamybara\n"
 "Do you wish to allow this?"
 msgstr ""
-"Otro complemento desea instalar un proveedor en Seren\n"
+"Otro complemento desea instalar un proveedor en Streamybara\n"
 "¿Desea permitirlo?"
 
 #: /resources/lib/modules/providers/install_manager.py:90
@@ -947,10 +947,10 @@ msgstr ""
 #: /resources/lib/modules/router.py:525
 msgctxt "#30168"
 msgid ""
-"Another addon is attempting to uninstall the {} provider from Seren\n"
+"Another addon is attempting to uninstall the {} provider from Streamybara\n"
 "Do you wish to allow this?"
 msgstr ""
-"Otro complemento intenta desinstalar el paquete {} en Seren.\n"
+"Otro complemento intenta desinstalar el paquete {} en Streamybara.\n"
 "¿Desea permitirlo?"
 
 #: /resources/lib/gui/tvshowMenus.py:169
@@ -2145,8 +2145,8 @@ msgstr "Borrar tu historial de búsqueda"
 
 #: /resources/lib/gui/homeMenu.py:136
 msgctxt "#30382"
-msgid "Open Seren's settings"
-msgstr "Abrir los Ajustes de Seren"
+msgid "Open Streamybara's settings"
+msgstr "Abrir los Ajustes de Streamybara"
 
 #: /resources/lib/gui/homeMenu.py:143
 msgctxt "#30383"
@@ -2172,15 +2172,15 @@ msgstr "Un conjunto de ventanas que te pueden ayudar a depurar tu tema"
 
 #: /resources/lib/gui/homeMenu.py:175
 msgctxt "#30386"
-msgid "Force Seren to check for updates for your installed provider(s)"
-msgstr "Forzar a Seren a buscar actualizaciones de tus proveedores instalados"
+msgid "Force Streamybara to check for updates for your installed provider(s)"
+msgstr "Forzar a Streamybara a buscar actualizaciones de tus proveedores instalados"
 
 #: /resources/lib/gui/homeMenu.py:182
 msgctxt "#30387"
-msgid "Open a window to enable/disable/install/uninstall providers in Seren"
+msgid "Open a window to enable/disable/install/uninstall providers in Streamybara"
 msgstr ""
 "Abrir una ventana para Habilitar/Deshabilitar/Instalar/Desinstalar "
-"proveedores en Seren"
+"proveedores en Streamybara"
 
 #: /resources/lib/gui/homeMenu.py:194
 msgctxt "#30388"
@@ -2189,9 +2189,9 @@ msgstr "Borrar el último registro de tiempo de sincronización"
 
 #: /resources/lib/gui/homeMenu.py:201
 msgctxt "#30389"
-msgid "Force Seren to perform a sync with Trakt's servers"
+msgid "Force Streamybara to perform a sync with Trakt's servers"
 msgstr ""
-"Forzar a Seren a realizar una sincronización con los servidores de Trakt"
+"Forzar a Streamybara a realizar una sincronización con los servidores de Trakt"
 
 #: /resources/lib/gui/homeMenu.py:208
 msgctxt "#30390"
@@ -2775,9 +2775,9 @@ msgstr "Selección de archivo"
 
 #: /resources/settings.xml:420
 msgctxt "#30484"
-msgid "Disable Seren fanart fallback on items missing fanart"
+msgid "Disable Streamybara fanart fallback on items missing fanart"
 msgstr ""
-"Deshabilitar la función de reserva de ilustración de Seren cuando no se "
+"Deshabilitar la función de reserva de ilustración de Streamybara cuando no se "
 "encuentra fanart"
 
 #: /resources/lib/modules/resolver/__init__.py:241
@@ -3026,11 +3026,11 @@ msgstr "Episodio {}"
 #: /resources/lib/modules/update_news.py:5
 msgctxt "#30530"
 msgid ""
-"Seren no longer has an update checker built in. \n"
+"Streamybara no longer has an update checker built in. \n"
 "\n"
 "If you wish to continue to be notified of updates, please ensure that you have the nixgates repository installed and either have automatic updates enabled or turn on notifications for addon updates in Kodi settings"
 msgstr ""
-"Seren ya no tiene un comprobador de actualizaciones integrado.\n"
+"Streamybara ya no tiene un comprobador de actualizaciones integrado.\n"
 "\n"
 " Si desea seguir siendo notificado de las actualizaciones, asegúrese de tener instalado el repositorio de nixgates y de tener habilitadas las actualizaciones automáticas o activar las notificaciones de actualizaciones de complementos en la configuración de Kodi"
 
@@ -3138,10 +3138,10 @@ msgstr "No se puede detectar la zona horaria"
 #: /resources/lib/modules/manual_timezone.py:14
 msgctxt "#30550"
 msgid ""
-"Seren was unable to detect your local time zone automatically.  Would you "
+"Streamybara was unable to detect your local time zone automatically.  Would you "
 "like to set this now?"
 msgstr ""
-"Seren no pudo detectar su zona horaria local automáticamente. ¿Le gustaría "
+"Streamybara no pudo detectar su zona horaria local automáticamente. ¿Le gustaría "
 "configurar esto ahora?"
 
 #: /resources/skins/Default/1080i/download_manager.xml:137
@@ -3750,8 +3750,8 @@ msgctxt "#30652"
 msgid "Icon Only"
 msgstr "Sólo icono"#: onboarding wizard
 msgctxt "#30700"
-msgid "Welcome to Seren"
-msgstr "Welcome to Seren"
+msgid "Welcome to Streamybara"
+msgstr "Welcome to Streamybara"
 
 msgctxt "#30701"
 msgid "Please complete the initial setup"

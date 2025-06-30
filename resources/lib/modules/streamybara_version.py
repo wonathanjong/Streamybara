@@ -4,13 +4,13 @@ from resources.lib.modules.globals import g
 
 
 def do_version_change():
-    if g.get_setting("seren.version") == g.CLEAN_VERSION:
+    if g.get_setting("streamybara.version") == g.CLEAN_VERSION:
         return
 
-    g.log("Clearing cache on Seren version change", "info")
+    g.log("Clearing cache on Streamybara version change", "info")
     g.clear_cache(silent=True)
 
-    g.set_setting("seren.version", g.CLEAN_VERSION)
+    g.set_setting("streamybara.version", g.CLEAN_VERSION)
 
     # Reuselanguageinvoker update.  This should be last to execute as it can do a profile reload.
 

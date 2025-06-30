@@ -1,6 +1,6 @@
 # Kodi Media Center language file
-# Addon Name: Seren
-# Addon id: plugin.video.Seren
+# Addon Name: Streamybara
+# Addon id: plugin.video.Streamybara
 # Addon Provider: Nixgates
 msgid ""
 msgstr ""
@@ -916,10 +916,10 @@ msgstr "Καθυστέρησε τις Ημερομηνίες Κυκλοφορί�
 #: /resources/lib/modules/router.py:515
 msgctxt "#30166"
 msgid ""
-"Another addon is attempting to install a provider into Seren\n"
+"Another addon is attempting to install a provider into Streamybara\n"
 "Do you wish to allow this?"
 msgstr ""
-"Ένα άλλο πρόσθετο επιχειρεί να εγκαταστήσει έναν πάροχο στο Seren\n"
+"Ένα άλλο πρόσθετο επιχειρεί να εγκαταστήσει έναν πάροχο στο Streamybara\n"
 "Επιθυμείτε να το επιτρέψετε?"
 
 #: /resources/lib/modules/providers/install_manager.py:90
@@ -934,10 +934,10 @@ msgstr ""
 #: /resources/lib/modules/router.py:525
 msgctxt "#30168"
 msgid ""
-"Another addon is attempting to uninstall the {} provider from Seren\n"
+"Another addon is attempting to uninstall the {} provider from Streamybara\n"
 "Do you wish to allow this?"
 msgstr ""
-"Ένα άλλο πρόσθετο επιχειρεί να απεεγκαταστήσει τον {} πάροχο από το Seren\n"
+"Ένα άλλο πρόσθετο επιχειρεί να απεεγκαταστήσει τον {} πάροχο από το Streamybara\n"
 "Επιθυμείτε να το επιτρέψετε?"
 
 #: /resources/lib/gui/tvshowMenus.py:169
@@ -2142,8 +2142,8 @@ msgstr "Εκκαθαρίστε το ιστορικό αναζήτησης"
 
 #: /resources/lib/gui/homeMenu.py:136
 msgctxt "#30382"
-msgid "Open Seren's settings"
-msgstr "Ανοίξτε τις ρυθμίσεις του Seren"
+msgid "Open Streamybara's settings"
+msgstr "Ανοίξτε τις ρυθμίσεις του Streamybara"
 
 #: /resources/lib/gui/homeMenu.py:143
 msgctxt "#30383"
@@ -2170,16 +2170,16 @@ msgstr ""
 
 #: /resources/lib/gui/homeMenu.py:175
 msgctxt "#30386"
-msgid "Force Seren to check for updates for your installed provider(s)"
+msgid "Force Streamybara to check for updates for your installed provider(s)"
 msgstr ""
-"Εξαναγκασμός ελέγχου ενημερώσεων Seren για τον εγκατεστημένο παροχέα σας"
+"Εξαναγκασμός ελέγχου ενημερώσεων Streamybara για τον εγκατεστημένο παροχέα σας"
 
 #: /resources/lib/gui/homeMenu.py:182
 msgctxt "#30387"
-msgid "Open a window to enable/disable/install/uninstall providers in Seren"
+msgid "Open a window to enable/disable/install/uninstall providers in Streamybara"
 msgstr ""
 "Ανοίξτε ένα παράθυρο για να (απ)ενεργοποιήσετε ή (απ)εγκαταστήσετε παρόχους "
-"στο Seren"
+"στο Streamybara"
 
 #: /resources/lib/gui/homeMenu.py:194
 msgctxt "#30388"
@@ -2188,9 +2188,9 @@ msgstr "Καταργήστε την τελευταία χρονική σήμαν
 
 #: /resources/lib/gui/homeMenu.py:201
 msgctxt "#30389"
-msgid "Force Seren to perform a sync with Trakt's servers"
+msgid "Force Streamybara to perform a sync with Trakt's servers"
 msgstr ""
-"Αναγκάστε τη Seren να πραγματοποιήσει συγχρονισμό με τους διακομιστές του "
+"Αναγκάστε τη Streamybara να πραγματοποιήσει συγχρονισμό με τους διακομιστές του "
 "Trakt"
 
 #: /resources/lib/gui/homeMenu.py:208
@@ -2785,9 +2785,9 @@ msgstr "Επιλογή αρχείου"
 
 #: /resources/settings.xml:420
 msgctxt "#30484"
-msgid "Disable Seren fanart fallback on items missing fanart"
+msgid "Disable Streamybara fanart fallback on items missing fanart"
 msgstr ""
-"Απενεργοποιήστε την εναλλαγή Seren fanart σε στοιχεία που λείπουν fanart"
+"Απενεργοποιήστε την εναλλαγή Streamybara fanart σε στοιχεία που λείπουν fanart"
 
 #: /resources/lib/modules/resolver/__init__.py:241
 msgctxt "#30485"
@@ -3035,11 +3035,11 @@ msgstr "Επεισόδιο {}"
 #: /resources/lib/modules/update_news.py:5
 msgctxt "#30530"
 msgid ""
-"Seren no longer has an update checker built in. \n"
+"Streamybara no longer has an update checker built in. \n"
 "\n"
 "If you wish to continue to be notified of updates, please ensure that you have the nixgates repository installed and either have automatic updates enabled or turn on notifications for addon updates in Kodi settings"
 msgstr ""
-"Η Seren δεν έχει πλέον ενσωματωμένο ένα πρόγραμμα ελέγχου ενημερώσεων.\n"
+"Η Streamybara δεν έχει πλέον ενσωματωμένο ένα πρόγραμμα ελέγχου ενημερώσεων.\n"
 "\n"
 " Εάν θέλετε να συνεχίσετε να ενημερώνεστε για ενημερώσεις, βεβαιωθείτε ότι έχετε εγκαταστήσει το αποθετήριο nixgates και ότι έχετε ενεργοποιήσει τις αυτόματες ενημερώσεις ή ενεργοποιήστε τις ειδοποιήσεις για ενημερώσεις πρόσθετων στις ρυθμίσεις του Kodi"
 
@@ -3146,10 +3146,10 @@ msgstr "Δεν είναι δυνατή η ανίχνευση ζώνης ώρας
 #: /resources/lib/modules/manual_timezone.py:14
 msgctxt "#30550"
 msgid ""
-"Seren was unable to detect your local time zone automatically.  Would you "
+"Streamybara was unable to detect your local time zone automatically.  Would you "
 "like to set this now?"
 msgstr ""
-"Η Seren δεν μπόρεσε να εντοπίσει αυτόματα την τοπική ζώνη ώρας. Θέλετε να το"
+"Η Streamybara δεν μπόρεσε να εντοπίσει αυτόματα την τοπική ζώνη ώρας. Θέλετε να το"
 " ορίσετε τώρα;"
 
 #: /resources/skins/Default/1080i/download_manager.xml:137
@@ -3759,8 +3759,8 @@ msgctxt "#30652"
 msgid "Icon Only"
 msgstr "Μόνο εικονίδιο"#: onboarding wizard
 msgctxt "#30700"
-msgid "Welcome to Seren"
-msgstr "Welcome to Seren"
+msgid "Welcome to Streamybara"
+msgstr "Welcome to Streamybara"
 
 msgctxt "#30701"
 msgid "Please complete the initial setup"

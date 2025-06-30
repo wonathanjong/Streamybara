@@ -43,7 +43,7 @@ Changelog 3.0.0
 [FEATURE] Better identification of WEB and BLURAY sources
 [FEATURE] Support clearlogo from TMDB
 [FEATURE] Prioritize Trakt airdate metadata
-[FEATURE] Update Seren logo for 3.0.0
+[FEATURE] Update Streamybara logo for 3.0.0
 [FEATURE] Icons for all menus
 [FEATURE] Support package and provider icons
 [FEATURE] Add Hebrew localizations
@@ -58,7 +58,7 @@ Changelog 3.0.0
 [BUG] Fix TVDB Normalization error
 [BUG] Fix Most TV Show Episodes/Seasons don't have certification (MPAA)
 [BUG] Fix Awake from sleep sometimes misses plugin calls
-[BUG] Fix Seren not playing some cached files from Premiumize
+[BUG] Fix Streamybara not playing some cached files from Premiumize
 [BUG] Fix sort_select tries to read invalid settings
 [BUG] Fix Local time conversion not happening for movies releases
 [BUG] Fix Clear logo overlap on getSources window
@@ -91,7 +91,7 @@ Changelog 2.2.0
 [FEATURE] Add enhanced filtering options
 [FEATURE] Improve release title info detection
 [FEATURE] Improved source statistics, filtering and pretermination
-[FEATURE] Updated default seren skin
+[FEATURE] Updated default streamybara skin
 [FEATURE] Window class refactors
 [FEATURE] Add adaptive source selection when smartplaying
 [FEATURE] "Original" for TMDB for High artwork size
@@ -129,7 +129,7 @@ Changelog 2.2.0
 [BUG] IndexError from sort_sources
 [BUG] TVDB errors when there is no item in the iterator
 [BUG] Shuffle Play not working when "Flatten Season Episodes" enabled
-[BUG] Seren not passing aliases to a4kScrapers for movies
+[BUG] Streamybara not passing aliases to a4kScrapers for movies
 [BUG] Cloud Scrapers don't find episodes that include year after title
 [BUG] Change NoPlayableSourcesExcetion to log at info level
 [BUG] Fix getSources progress calculation
@@ -214,7 +214,7 @@ Don't use dict.keys() when unnecessary
 Some minor fixes and optimisations to tools and globals
 Minor performance improvement to the sqlite row factory
 Optimise TZ initialisation
-Debounce onSettingsChanged callback in SerenMonitor
+Debounce onSettingsChanged callback in StreamybaraMonitor
 Added database indices to episodes, movies, hidden and bookmarks tables
 
 Changelog 2.1.3
@@ -265,7 +265,7 @@ Improve caching code to reduce required requests.
 Additional caching for metadata indexer endpoints
 Improve database handling code
 Improve timezone detection fallback handling
-Make Seren python version agnostic
+Make Streamybara python version agnostic
 Implemented a true settings cache
 Brought back test windows feature for skin developers
 Moved to kodi module version of unidecode
@@ -462,7 +462,7 @@ Changelog 2.0.2:
 Force table re-fresh is sync database fails to rebuild when updating
 
 Changelog 2.0.1:
-Fix last_meta_update value to reflect new Seren version
+Fix last_meta_update value to reflect new Streamybara version
 
 Changleog 2.0.0:
 
@@ -500,7 +500,7 @@ Automated resolving now more reliable
 OMDB API implemented
 Feedback provided at scrape if no providers are found
 Feedback provided at scrape if no debrid providers are setup
-Debrid account status now visible from Seren settings
+Debrid account status now visible from Streamybara settings
 
 
 Changelog 1.6.10:
@@ -560,7 +560,7 @@ Fixed MyFiles for All Debrid
 Seperated cloud services within MyFiles
 
 Changelog 1.6.3:
-Fixed backwards compatibility for older Seren list urls
+Fixed backwards compatibility for older Streamybara list urls
 Movie titles now confirm against IMDB before scrape
 Stop triggering Oauth refresh on 401 errors
 Next up sort style now requires Trakt Auth
@@ -593,7 +593,7 @@ Complete re-work of the standard playlist building (removes building playlist wi
 Re-work of My Files module to reduce spaghetti
 Re-work of resolver module to reduce spaghetti
 New Custom Windows Still Watching/Play Next
-Added update support for Seren Themes
+Added update support for Streamybara Themes
 Removed support for UpNext addon
 Lists are now synced to the trakt database
 More work on player.py module, better bookmark identification and playback marking
@@ -691,11 +691,11 @@ Changelog 1.3.1:
 Fixed delay when resuming items
 Fixed issues with missing theme variables in tools module
 Lowered RD request timeout
-Improved Seren's ability to detect moment playback has started
+Improved Streamybara's ability to detect moment playback has started
 Improved handeling of accented text in Premiumize resolver
 
 Changelog 1.3.0:
-Serens skins renamed to "Themes" to try avoid confusion with Kodi skins
+Streamybaras skins renamed to "Themes" to try avoid confusion with Kodi skins
 Fixed issue displaying show seasons where season numbering does not start from 1 eg BBC Horizon
 Added Flatten Seasons setting
 Small improvements to player module
@@ -727,7 +727,7 @@ Added confirmation at clearing of torrent cache
 Added confirmation at clearing of search history
 Removed multiline source select setting as it is no longer required
 Setting "Hide Low Quality Items" renamed to "Hide Common Undesirable Items"
-Setting "Check for Seren Updates" renamed to "Notify Me About Available Updates"
+Setting "Check for Streamybara Updates" renamed to "Notify Me About Available Updates"
 Removal of orphaned files
 Restructuring of some folders
 Fixed duplicate removal process removing debrid duplicates
@@ -774,7 +774,7 @@ Further adjustments of background overlay to better suit brighter fanart images
 Changelog 1.0.18:
 Added Overlay to custom windows
 Added re-worked versions of artwork
-Seren Fanart now applies to all items that are missing fanart
+Streamybara Fanart now applies to all items that are missing fanart
 
 Changelog 1.0.17:
 Adjust poster size in Source Select
@@ -789,7 +789,7 @@ Local torrent database restructued to increase speeds and handling of entries
 Increased visibility of selected item in source select view
 Fixed hosters providers not scraping episodes
 Hosters now display the release title of the source if available
-Re-work of Seren artwork
+Re-work of Streamybara artwork
 
 Changelog 1.0.14:
 Fixed Shuffle Play
@@ -816,7 +816,7 @@ Fixed Hiding show from episode items
 
 Changelog 1.0.9:
 Fixed Date Display issue with Up Next notification
-Menu caching is now optional within Seren settings, defaulted to On
+Menu caching is now optional within Streamybara settings, defaulted to On
 Show year meta information now gathered from Trakt instead of TVDB (meta missing on some titles)
 Changes to search menu to provide better usability
 Increasesd title identification
@@ -850,7 +850,7 @@ Rollback changes to initial playlist creation due to issues with skin widgets
 
 Changelog 1.0.4:
 Added workaround for getSources api call
-Fixed more URL issues in seren.py breaking play style
+Fixed more URL issues in streamybara.py breaking play style
 
 Changelog 1.0.3:
 Fixed issue cloud scraping for movie items caused by URL changes
@@ -867,10 +867,10 @@ Fix issues with list style source select and URL changes
 Fixed date display in list style source select window
 
 Changelog 1.0.0:
-Removed Building Playlist process, seren now moves straight to scraping and fills in the playlist in the background
+Removed Building Playlist process, streamybara now moves straight to scraping and fills in the playlist in the background
 Re-worked smartplay module
-Moving forward, Seren's versioning should now match semantic versioning
-Complete restructure of actionArgs for Seren API endpoints
+Moving forward, Streamybara's versioning should now match semantic versioning
+Complete restructure of actionArgs for Streamybara API endpoints
 Fixed issues with trakt manager when in a mixed episode list
 Fixed Trakt Sync failing with exceptionally large libraries
 
@@ -911,7 +911,7 @@ Fixed missing settings check for Local Torrent Cache inspection.
 Fixed CM options not showing if context menu addon not installed
 
 Changelog 0.2.35:
-Seren now utilizes Kodi Repository dateutil package
+Streamybara now utilizes Kodi Repository dateutil package
 
 Changelog 0.2.34:
 Cleaned up logging
@@ -928,8 +928,8 @@ Fixed issue with hide SD removing cloud files
 
 Changelog 0.2.31:
 Fixed issue with un-aired episodes being added to playlist after smartplay speedup
-Seren now confirms TMDB year information with IMDB prior to scraping
-Fixed issues with Seren identifying sources from the users premiumize cloud
+Streamybara now confirms TMDB year information with IMDB prior to scraping
+Fixed issues with Streamybara identifying sources from the users premiumize cloud
 
 Changelog 0.2.30:
 Fixed dictionary key issue for show items in smartPlay modules created with new workaround
@@ -944,7 +944,7 @@ Fixed issue with ADDON_NAME variable change
 Changelog 0.2.27:
 Adjusted RD cache inspection to allow multiple video files within a single movie item
 Adjust RD movie resolving to pull largest file out of torrent item
-Seren now polls Kodi for supported video containers instead of hardcoding
+Streamybara now polls Kodi for supported video containers instead of hardcoding
 Fixed key error when marking episode as watched in local database
 Added settings cache dictionary to reduce Kodi's logging of "trying to load setting definitions from old format..."
 Cleaned up addon logging
@@ -1024,7 +1024,7 @@ Fixed language filter for New Shows menu
 Networks now utilise the Trakt shows/Popular API endpoint
 Reduced meta refresh check timeout to 2 hours
 Next Up now utilises the trakt sync database to identify the next episode to watch
-Added database versioning, database can now be flushed and upgraded/downgraded as required by Seren
+Added database versioning, database can now be flushed and upgraded/downgraded as required by Streamybara
 
 Changelog 0.2.15:
 Fixed genre capitalization
@@ -1040,8 +1040,8 @@ Fixed Unaired episodes showing as aired
 
 Changelog 0.2.12:
 Fixed Next menu item for show Years
-Re-added ability for Seren to display un-aired episodes if Hide Unaired is unchecked
-Added automatic checks and prompt for Seren updates
+Re-added ability for Streamybara to display un-aired episodes if Hide Unaired is unchecked
+Added automatic checks and prompt for Streamybara updates
 Force check for episodes in season episode menus if hide unaired is disabled
 Stopped trakt sync from attempting to update user information if user is not authorised with trakt
 
@@ -1176,7 +1176,7 @@ Adjust custom providers so installs can be requested from external addons (with 
 Added Hide SD quality option to settings
 TVDB images now filter by language code (statically set to english for the interim)
 Multiple Language String Fixes
-Added fix for Seren scrobbling items twice
+Added fix for Streamybara scrobbling items twice
 Added ability for providers to override provider display names
 Next Up now filters items if they are the first episode in the series and have previously been completed
 Added Show Networks to Discover TV Shows
@@ -1242,7 +1242,7 @@ Added try except in zfile module to handle if file is already in byte form
 
 Changelog 0.1.27
 Added delay to setViewType call
-Added setting to disable setting viewTypes with Seren
+Added setting to disable setting viewTypes with Streamybara
 Removed idle, closeAllDialogs, added closeOkDialog, added closeBusyDialog
 Removed busy dialog stalling after failure to find sources
 
@@ -1257,7 +1257,7 @@ Trakt lists sorting now ignores 'The '
 Removed title appends to follow more closely to Kodi standards, another method of showing play percentage must be met
 Fixed Trakt dates for episode items
 Added Studio to metadata
-Seren now appends next season to current playlist during playback instead of after
+Streamybara now appends next season to current playlist during playback instead of after
 Removed references to now defunct OMNIConnect Addon
 Added Re-scrape cm item to episode items
 Fixed and optimised list pagination
@@ -1269,7 +1269,7 @@ Release titles are now deaccented and encoded with utf-8 to prevent unicode erro
 Fixed Ghost providers occuring if a provider was no longer available in a updated version of a provider package.
 Fixed TVDB module creating an artwork URL if no artwork is available
 Added token refresh lock to the TVDB module to stop instances of the class spawning mass refresh requests
-Massively reduced chance Kodi will drop Seren's settings
+Massively reduced chance Kodi will drop Streamybara's settings
 Fixed Real Debrid post request making a get request after token refresh
 Custom Provider module now uses Zfile module to accomodate zipfile module bug on Android devices
 
