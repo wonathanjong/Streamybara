@@ -12,7 +12,9 @@ Streamybara is a multi-source addon for Kodi with the added ability to install c
 The add-on now includes a first-run onboarding wizard guiding you through
 configuring debrid providers, connecting your Trakt account, adding a scraper
 source and choosing a preferred resolution profile. The wizard runs automatically the
-first time Streamybara launches and can later be accessed from the settings menu.
+first time Streamybara launches and can later be accessed from the settings menu. When
+running, the wizard disables any additional authorization pop-ups so setup can
+complete uninterrupted.
 Resolution profiles include **Highest**, **High**, **Medium**, and **Low** which
 select streams based on resolution and file size.
 
@@ -33,9 +35,9 @@ Selecting any title now opens a detail page with a play button,
 rich metadata and related recommendations. A new **Select Source** button lets
 you override the resolution chosen from your preference setting.
 Home carousels now feature a **More** button to view entire rows and a simple
-back stack remembers your previous screens. The onboarding wizard verifies the
-format of your provider token and Trakt API key so setup will not finish until
-valid details are entered.
+back stack remembers your previous screens. The onboarding wizard now surfaces
+authorization buttons for Trakt, Premiumize, Real-Debrid and AllDebrid using the
+same dialogs found in settings so no manual keys or tokens are required.
 
 ## Contribution
 
